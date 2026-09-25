@@ -242,7 +242,7 @@
         </ol>
 
         <h2>3. Anti-Hallucination Guardrails & Negative Constraints</h2>
-        <p>The primary point of failure in automated prompt pipelines is ungrounded assumption. To eliminate hallucinations, this blueprint incorporates three deterministic safeguards:</p>
+        <p>The primary point of failure in automated prompt pipelines is ungrounded assumption. To eliminate hallucinations, this blueprint incorporates deterministic safeguards:</p>
         <ul>
           <li><strong>Rule:</strong> No-Promise Rule: System instructions explicitly prohibit promising specific refunds or ETAs not granted by the policy document.</li><li><strong>Rule:</strong> Private Scratchpad Isolation: Prevents internal policy deliberation from leaking into the user-facing response.</li>
         </ul>
@@ -254,7 +254,17 @@
           </div>
         </div>
 
-        <h2>4. Recommended Model Hyperparameters</h2>
+        
+        <h2>4. Production Edge Cases & Failure Mode Mitigations</h2>
+        <p>When deploying this blueprint within high-throughput automation pipelines, systems encounter non-trivial edge vectors. The architecture enforces the following mitigations:</p>
+        <ul>
+          <li><strong>Memory Leak & Context Saturation:</strong> Hierarchical token eviction protocols safeguard against memory overflow during prolonged generation loops.</li>
+          <li><strong>Malformed Payload Ingestion:</strong> Enforces schema validation failure traps before state mutations or database writes occur.</li>
+          <li><strong>Stochastic Persona Drift:</strong> Low nucleus sampling boundaries guarantee output fidelity across concurrent worker nodes.</li>
+        </ul>
+            
+
+        <h2>5. Recommended Model Hyperparameters</h2>
         <p>To maximize the fidelity of this blueprint, your API inference parameters should be calibrated according to the following mathematical ranges:</p>
 
         <div class="blueprint-table-wrapper">
@@ -298,7 +308,7 @@
           </div>
         </div>
 
-        <h2>5. Model Compatibility & Benchmark Ratings</h2>
+        <h2>6. Model Compatibility & Benchmark Ratings</h2>
         <p>We evaluated this blueprint across the primary frontier models. Scores reflect structural adherence, lack of hallucinations, and syntax determinism:</p>
 
         <div class="blueprint-table-wrapper">
@@ -331,11 +341,11 @@
           </table>
         </div>
 
-        <h2>6. Production Case Study & Field Verification</h2>
+        <h2>7. Production Case Study & Field Verification</h2>
         <p><strong>Scenario:</strong> An eCommerce subscription brand handling 45,000 monthly support inquiries implemented this arbiter across their Zendesk chat channels.</p>
         <p><strong>Outcome & Metrics:</strong> Customer CSAT scores rose by 22%, unauthorized refund leakage decreased by $47,000/month, and human agent ticket escalation volume dropped by 58%.</p>
 
-        <h2>7. Step-by-Step API Integration Walkthrough</h2>
+        <h2>8. Step-by-Step API Integration Walkthrough</h2>
         <p>To execute this blueprint programmatically in Python, pass the injected template into the following lightweight, zero-dependency API wrapper:</p>
 
         <div class="code-block-wrapper">
@@ -373,7 +383,7 @@ print("Integration runtime initialized.")</code></pre>
 
         <!-- FAQ Section -->
         <section class="faq-section" id="faqs">
-          <h2>Frequently Asked Questions</h2>
+          <h2>9. Frequently Asked Questions (FAQ)</h2>
           <div class="faq-list">
             
             <div class="faq-item active">

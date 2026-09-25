@@ -84,15 +84,16 @@
 /* Two Column Layout: Main Content + Sticky Sandbox / TOC */
 .blueprint-layout {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: minmax(0, 1fr) 380px;
   gap: 2.5rem;
   margin-bottom: 4rem;
   align-items: start;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .blueprint-layout {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
@@ -105,6 +106,7 @@
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   box-shadow: var(--shadow-lg), 0 0 25px rgba(6, 182, 212, 0.1);
+  max-width: 100%;
 }
 
 .sandbox-header {
@@ -270,58 +272,81 @@
 /* Deep Technical Guide (Content Body) */
 .blueprint-content {
   color: var(--text-secondary);
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .blueprint-content h2 {
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   font-weight: 800;
   color: #fff;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
   margin: 2.75rem 0 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
+}
+
+.blueprint-content h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.25rem;
+  background: var(--gradient-brand);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
 }
 
 .blueprint-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
-  margin: 1.75rem 0 0.75rem;
+  color: var(--brand-cyan);
+  margin: 2rem 0 0.75rem;
 }
 
 .blueprint-content p {
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
-  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.35rem;
+  font-size: 1.05rem;
+  color: #cbd5e1;
 }
 
 .blueprint-content ul, .blueprint-content ol {
-  padding-left: 1.5rem;
+  padding-left: 1.75rem;
   margin-bottom: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.8;
+  color: #cbd5e1;
 }
 
 .blueprint-content li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.blueprint-content strong {
+  color: #fff;
+  font-weight: 600;
 }
 
 /* Code Snippet Blocks */
 .code-block-wrapper {
-  background: #080c16;
+  background: #060911;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
   overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .code-block-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.15rem;
   background-color: rgba(255, 255, 255, 0.03);
   border-bottom: 1px solid var(--border-color);
   font-size: 0.75rem;
@@ -338,7 +363,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.2rem 0.4rem;
+  padding: 0.25rem 0.5rem;
   border-radius: var(--radius-sm);
   transition: all 0.15s ease;
 }
@@ -349,20 +374,24 @@
 }
 
 .code-block-wrapper pre {
-  padding: 1.25rem;
+  padding: 1.25rem 1.5rem;
   font-family: var(--font-mono);
-  font-size: 0.875rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.7;
   color: #cbd5e1;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* Tables for Hyperparameters & Model Benchmarks */
 .blueprint-table-wrapper {
   overflow-x: auto;
-  margin: 1.5rem 0 2rem;
+  margin: 1.75rem 0 2rem;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
+  max-width: 100%;
+  background: var(--bg-card);
 }
 
 .spec-table {

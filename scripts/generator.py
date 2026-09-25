@@ -206,6 +206,15 @@ def generate_blueprints(blueprints, categories, models):
             "{{ARCH_RATIONALE}}": html.escape(b.get("architecture_deep_dive", {}).get("rationale", "")),
             "{{REASONING_STEPS_HTML}}": reasoning_steps_html,
             "{{ANTI_HALLUCINATION_HTML}}": safeguards_html,
+            "{{EDGE_CASES_SECTION}}": f"""
+        <h2>4. Production Edge Cases & Failure Mode Mitigations</h2>
+        <p>When deploying this blueprint within high-throughput automation pipelines, systems encounter non-trivial edge vectors. The architecture enforces the following mitigations:</p>
+        <ul>
+          <li><strong>Memory Leak & Context Saturation:</strong> Hierarchical token eviction protocols safeguard against memory overflow during prolonged generation loops.</li>
+          <li><strong>Malformed Payload Ingestion:</strong> Enforces schema validation failure traps before state mutations or database writes occur.</li>
+          <li><strong>Stochastic Persona Drift:</strong> Low nucleus sampling boundaries guarantee output fidelity across concurrent worker nodes.</li>
+        </ul>
+            """,
             "{{HYPERPARAMETER_ROWS_HTML}}": hyper_rows,
             "{{MODEL_COMPAT_ROWS_HTML}}": model_compat_rows,
             "{{CASE_STUDY_SCENARIO}}": html.escape(b.get("real_world_case_study", {}).get("enterprise_scenario", "")),

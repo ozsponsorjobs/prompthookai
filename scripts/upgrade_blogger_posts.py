@@ -151,7 +151,7 @@ def build_upgraded_blueprint(post, template_html):
     
     # Edge Cases & Mitigation Section (adds ~250 words of pure technical value)
     edge_cases_html = f"""
-    <h2>Production Edge Cases & Failure Mode Mitigations</h2>
+    <h2>4. Production Edge Cases & Failure Mode Mitigations</h2>
     <p>When running {html.escape(title)} at scale across enterprise API endpoints, automated pipelines regularly encounter catastrophic edge conditions. This blueprint is defensively engineered to absorb and mitigate the following failure vectors:</p>
     <ul>
       <li><strong>Context Window Overflow & Token Exhaustion:</strong> If input documents or prompt variables approach the model's maximum context horizon, this blueprint enforces a hierarchical chunking strategy that summarizes historical turns before executing the final deliverable.</li>
@@ -256,7 +256,8 @@ def build_upgraded_blueprint(post, template_html):
         "{{SYSTEM_INSTRUCTIONS}}": html.escape(system_instructions),
         "{{ARCH_RATIONALE}}": html.escape(f"Standard prompting approaches for {title} frequently produce generic responses or suffer from model hallucinations. This blueprint implements an adversarial verification loop and negative constraints to ensure high-fidelity deliverables."),
         "{{REASONING_STEPS_HTML}}": reasoning_steps_html,
-        "{{ANTI_HALLUCINATION_HTML}}": safeguards_html + f"</ul>\n{edge_cases_html}\n<ul>",
+        "{{ANTI_HALLUCINATION_HTML}}": safeguards_html,
+        "{{EDGE_CASES_SECTION}}": edge_cases_html,
         "{{HYPERPARAMETER_ROWS_HTML}}": hyper_rows,
         "{{MODEL_COMPAT_ROWS_HTML}}": model_compat_rows,
         "{{CASE_STUDY_SCENARIO}}": html.escape(f"An enterprise technology team deployed this exact {title} specification to automate high-frequency internal workflows across 25,000 monthly executions."),
