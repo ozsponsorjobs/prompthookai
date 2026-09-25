@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "code-engineering",
+    "name": "Code & Software Engineering",
+    "short_name": "Coding",
+    "tagline": "Architectural refactoring, deterministic test generation, and AST-level security audits.",
+    "description": "High-rigor prompt blueprints engineered for Staff Engineers, DevOps Architects, and Full-Stack Developers. Eliminate boilerplate, isolate CVE vulnerabilities, and maintain deterministic code quality across TypeScript, Python, Go, and Rust.",
+    "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='16 18 22 12 16 6'></polyline><polyline points='8 6 2 12 8 18'></polyline></svg>",
+    "stats": "15+ Blueprints",
+    "meta_title": "Code Engineering Prompt Blueprints | PromptHook AI",
+    "meta_description": "Hyper-optimized prompt blueprints for software engineering, AST refactoring, security audits, and automated test suite synthesis."
+  },
+  {
+    "slug": "autonomous-agents",
+    "name": "Autonomous Agents & Tool-Use",
+    "short_name": "Agents",
+    "tagline": "ReAct cognitive chains, state machine controllers, and self-healing multi-agent workflows.",
+    "description": "Deterministic system prompts and decision-tree blueprints for LangChain, AutoGen, CrewAI, and native LLM function calling. Designed with strict token budgeting and infinite-loop breaker guardrails.",
+    "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='11' width='18' height='10' rx='2'></rect><circle cx='12' cy='5' r='2'></circle><path d='M12 7v4'></path><line x1='8' y1='16' x2='8' y2='16'></line><line x1='16' y1='16' x2='16' y2='16'></line></svg>",
+    "stats": "12+ Blueprints",
+    "meta_title": "Autonomous AI Agent Blueprints & Prompts | PromptHook AI",
+    "meta_description": "Production prompt blueprints for autonomous AI agents, tool-use orchestration, ReAct cycles, and function calling workflows."
+  },
+  {
+    "slug": "data-analytics",
+    "name": "Data Analytics & Extraction",
+    "short_name": "Data",
+    "tagline": "Strict JSON schema enforcement, unstructured data parsing, and SQL optimization.",
+    "description": "Zero-hallucination data transformations. Extract complex relational entities, convert noisy HTML/PDF dumps into validated Pydantic models, and auto-generate optimized PostgreSQL & BigQuery syntax.",
+    "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='20' x2='18' y2='10'></line><line x1='12' y1='20' x2='12' y2='4'></line><line x1='6' y1='20' x2='6' y2='14'></line></svg>",
+    "stats": "10+ Blueprints",
+    "meta_title": "Data Extraction & Analytics Prompt Blueprints | PromptHook AI",
+    "meta_description": "Engineered prompts for zero-hallucination JSON extraction, SQL optimization, and automated data pipeline structuring."
+  },
+  {
+    "slug": "seo-content-strategy",
+    "name": "Programmatic SEO & Content",
+    "short_name": "SEO",
+    "tagline": "Semantic topic clustering, search intent matching, and deep technical article synthesis.",
+    "description": "Dominate search engine rankings without producing thin AI fluff. Blueprints engineered to produce 1,500+ words of deeply structured, E-E-A-T aligned, schema-ready technical guides and programmatic landing pages.",
+    "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='8'></circle><line x1='21' y1='21' x2='16.65' y2='16.65'></line><polyline points='11 8 11 12 14 14'></polyline></svg>",
+    "stats": "14+ Blueprints",
+    "meta_title": "Programmatic SEO Prompt Blueprints | PromptHook AI",
+    "meta_description": "High-intent programmatic SEO prompts for comprehensive topic cluster generation, schema markup design, and deep technical copywriting."
+  },
+  {
+    "slug": "growth-marketing",
+    "name": "Growth & Conversion Copywriting",
+    "short_name": "Growth",
+    "tagline": "Psychological cold outreach sequences, viral hooks, and high-conversion landing page copy.",
+    "description": "Field-tested B2B and SaaS growth blueprints. Inject your ICP parameters, value proposition, and competitor weaknesses to generate multi-touch email sequences and conversion-optimized sales letters.",
+    "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M22 12h-4l-3 9L9 3l-3 9H2'></path></svg>",
+    "stats": "11+ Blueprints",
+    "meta_title": "Growth Marketing & Copywriting Prompt Blueprints | PromptHook AI",
+    "meta_description": "Hyper-targeted prompts for cold B2B outreach, viral social hooks, and SaaS conversion rate optimization."
+  },
+  {
+    "slug": "customer-support",
+    "name": "Customer Support & Triage",
+    "short_name": "Support",
+    "tagline": "Context-aware sentiment triage, policy enforcement, and dispute resolution workflows.",
+    "description": "Enterprise-grade customer experience prompts. Train multi-turn support bots to resolve tier-1 and tier-2 tickets while strictly maintaining company refund boundaries and empathetic brand tone.",
+    "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'></path></svg>",
+    "stats": "8+ Blueprints",
+    "meta_title": "Customer Support AI Prompt Blueprints | PromptHook AI",
+    "meta_description": "Enterprise customer triage prompt blueprints, escalation handlers, and automated support response templates."
+  }
+]

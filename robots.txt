@@ -1,0 +1,13 @@
+# PromptHook AI - Advanced Crawler Directives
+User-agent: *
+Allow: /
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+
+# AdSense Crawler
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://www.prompthookai.com/sitemap.xml

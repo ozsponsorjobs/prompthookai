@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "gpt-4o",
+    "name": "OpenAI GPT-4o",
+    "developer": "OpenAI",
+    "context_window": "128,000 tokens",
+    "strengths": "Fast omni-modal execution, strict instruction adherence, deterministic JSON schema compliance, and balanced creative/technical performance.",
+    "ideal_temperature_range": "0.15 - 0.70",
+    "tagline": "The flagship multi-modal reasoning engine for production API integrations.",
+    "meta_title": "OpenAI GPT-4o Prompt Blueprints & Optimal Parameters | PromptHook AI",
+    "meta_description": "Curated collection of hyper-optimized prompt blueprints calibrated specifically for OpenAI GPT-4o with exact temperature, top_p, and system prompts."
+  },
+  {
+    "slug": "claude-sonnet-3-7",
+    "name": "Anthropic Claude 3.7 Sonnet",
+    "developer": "Anthropic",
+    "context_window": "200,000 tokens",
+    "strengths": "State-of-the-art coding, nuanced architectural refactoring, extended thinking mode, and superior handling of complex multi-file codebases.",
+    "ideal_temperature_range": "0.10 - 0.50",
+    "tagline": "The industry benchmark for deep software engineering and long-form analytical synthesis.",
+    "meta_title": "Claude 3.7 Sonnet Prompt Blueprints & Architect Guides | PromptHook AI",
+    "meta_description": "Engineered prompt blueprints optimized for Anthropic Claude 3.7 Sonnet. Exploit hybrid reasoning, artifact creation, and zero-hallucination code reviews."
+  },
+  {
+    "slug": "deepseek-r1",
+    "name": "DeepSeek R1",
+    "developer": "DeepSeek AI",
+    "context_window": "128,000 tokens",
+    "strengths": "Reinforcement-learning-driven mathematical reasoning, transparent Chain-of-Thought (CoT), algorithmic competitive programming, and cost-effective deployment.",
+    "ideal_temperature_range": "0.50 - 0.70",
+    "tagline": "The open-weight reinforcement reasoning titan for rigorous logic and algorithmic synthesis.",
+    "meta_title": "DeepSeek R1 Prompt Blueprints & Chain-of-Thought Templates | PromptHook AI",
+    "meta_description": "Maximize reasoning performance on DeepSeek R1 with parameter-injected prompt blueprints, algorithmic proofs, and logic verification templates."
+  },
+  {
+    "slug": "gemini-2-flash",
+    "name": "Google Gemini 2.0 Flash",
+    "developer": "Google DeepMind",
+    "context_window": "1,048,576 tokens",
+    "strengths": "Sub-second time-to-first-token, massive 1M+ context window for deep document processing, native tool calling, and high-frequency real-time pipelines.",
+    "ideal_temperature_range": "0.20 - 0.60",
+    "tagline": "Ultra-fast, million-token context powerhouse for real-time streaming architectures.",
+    "meta_title": "Google Gemini 2.0 Flash Prompt Blueprints | PromptHook AI",
+    "meta_description": "Discover prompt blueprints engineered for Google Gemini 2.0 Flash. Process million-token code repositories and document archives with instant streaming."
+  }
+]
