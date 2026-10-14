@@ -1,11 +1,81 @@
 /**
  * PromptHook AI - Enterprise Blueprint Runtime Engine
  * Interactive Parameter Injection, Token Metric Calculation, 1-Click Copy,
- * ChatGPT/Claude 1-Click Export, Python/cURL Generators, Live Response Simulation,
- * and Community Feedback Rating.
+ * Direct ChatGPT/Claude Auto-Copy & Launch, Python/cURL Generators,
+ * Live Response Simulation, and Community Feedback Rating.
  */
 (function() {
   'use strict';
+
+  // Helper: Toast Notification
+  function showToast(message) {
+    let toast = document.getElementById('phToastNotification');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'phToastNotification';
+      toast.className = 'ph-toast';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span>${message}</span>
+    `;
+    toast.classList.add('show');
+
+    if (window._phToastTimeout) clearTimeout(window._phToastTimeout);
+    window._phToastTimeout = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 4000);
+  }
+
+  // Universal ChatGPT launcher with clipboard guarantee
+  function launchChatGPT(text, btnElement) {
+    if (!text) return;
+    const cleanText = text.trim();
+
+    // 1. Copy full prompt to clipboard
+    navigator.clipboard.writeText(cleanText).catch(e => console.error('Clipboard error:', e));
+
+    // 2. Button feedback
+    if (btnElement) {
+      const orig = btnElement.innerHTML;
+      btnElement.innerHTML = '<span>✓ Copied &amp; Opening...</span>';
+      setTimeout(() => { btnElement.innerHTML = orig; }, 2200);
+    }
+
+    // 3. Inform user with prominent toast
+    showToast('✓ Prompt copied to clipboard! Opening ChatGPT (Press Ctrl+V to paste if not auto-filled)');
+
+    // 4. Construct ChatGPT URL (truncate safely to avoid browser 2048-char URL crash)
+    const urlSnippet = cleanText.length > 1800 ? cleanText.substring(0, 1800) : cleanText;
+    const targetUrl = 'https://chatgpt.com/?prompt=' + encodeURIComponent(urlSnippet) + '&q=' + encodeURIComponent(urlSnippet);
+    window.open(targetUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  // Universal Claude launcher with clipboard guarantee
+  function launchClaude(text, btnElement) {
+    if (!text) return;
+    const cleanText = text.trim();
+
+    // 1. Copy full prompt to clipboard
+    navigator.clipboard.writeText(cleanText).catch(e => console.error('Clipboard error:', e));
+
+    // 2. Button feedback
+    if (btnElement) {
+      const orig = btnElement.innerHTML;
+      btnElement.innerHTML = '<span>✓ Copied &amp; Opening...</span>';
+      setTimeout(() => { btnElement.innerHTML = orig; }, 2200);
+    }
+
+    // 3. Inform user with prominent toast
+    showToast('✓ Prompt copied to clipboard! Opening Claude (Press Ctrl+V to paste)');
+
+    // 4. Open Claude
+    window.open('https://claude.ai/new', '_blank', 'noopener,noreferrer');
+  }
 
   function initBlueprintRuntime() {
     const sandboxCard = document.querySelector('.sandbox-card');
@@ -15,7 +85,7 @@
     const tokenBadge = document.getElementById('liveTokenEstimate');
     const templateElement = document.getElementById('rawPromptTemplate');
 
-    // Developer Action Buttons
+    // Developer Action Buttons in Sandbox
     const btnOpenChatGPT = document.getElementById('btnOpenChatGPT');
     const btnOpenClaude = document.getElementById('btnOpenClaude');
     const btnCopyPython = document.getElementById('btnCopyPythonSnippet');
@@ -23,6 +93,9 @@
     const btnSimulate = document.getElementById('btnSimulateRun');
     const simulationBox = document.getElementById('simulationBox');
     const simulationBody = document.getElementById('simulationBody');
+
+    // Wire up all code blocks in the article (e.g. System Directive block)
+    initCodeBlockActionButtons();
 
     if (!sandboxCard || !promptStreamBox || !templateElement) {
       initFaqAccordions();
@@ -76,6 +149,8 @@
           `;
           copyBtn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
 
+          showToast('✓ Full injected prompt copied to clipboard!');
+
           setTimeout(() => {
             copyBtn.innerHTML = originalText;
             copyBtn.style.background = '';
@@ -94,24 +169,21 @@
           input.value = defaultVal;
         });
         updateInjectedPrompt();
+        showToast('Reset parameters to defaults');
       });
     }
 
-    // 1-Click Open in ChatGPT
+    // 1-Click Open in ChatGPT (from Sandbox)
     if (btnOpenChatGPT) {
       btnOpenChatGPT.addEventListener('click', () => {
-        const text = promptStreamBox.textContent;
-        const url = 'https://chatgpt.com/?q=' + encodeURIComponent(text);
-        window.open(url, '_blank', 'noopener,noreferrer');
+        launchChatGPT(promptStreamBox.textContent, btnOpenChatGPT);
       });
     }
 
-    // 1-Click Open in Claude
+    // 1-Click Open in Claude (from Sandbox)
     if (btnOpenClaude) {
       btnOpenClaude.addEventListener('click', () => {
-        const text = promptStreamBox.textContent;
-        const url = 'https://claude.ai/new?q=' + encodeURIComponent(text);
-        window.open(url, '_blank', 'noopener,noreferrer');
+        launchClaude(promptStreamBox.textContent, btnOpenClaude);
       });
     }
 
@@ -136,6 +208,7 @@ print(response.content[0].text)`;
           await navigator.clipboard.writeText(pythonSnippet);
           const orig = btnCopyPython.innerHTML;
           btnCopyPython.innerHTML = '<span>✓ Copied Python</span>';
+          showToast('✓ Python SDK snippet copied to clipboard!');
           setTimeout(() => { btnCopyPython.innerHTML = orig; }, 1800);
         } catch (e) {
           console.error('Copy Python failed', e);
@@ -160,6 +233,7 @@ print(response.content[0].text)`;
           await navigator.clipboard.writeText(curlSnippet);
           const orig = btnCopyCurl.innerHTML;
           btnCopyCurl.innerHTML = '<span>✓ Copied cURL</span>';
+          showToast('✓ cURL command copied to clipboard!');
           setTimeout(() => { btnCopyCurl.innerHTML = orig; }, 1800);
         } catch (e) {
           console.error('Copy cURL failed', e);
@@ -205,31 +279,49 @@ Executing architectural delivery for: "${blueprintTitle}"...
       });
     }
 
-    // Code blocks copy buttons
+    // Initial render
+    updateInjectedPrompt();
+    initFaqAccordions();
+    initFeedbackButtons();
+  }
+
+  // Connects copy, ChatGPT and Claude buttons across ALL code blocks in the article
+  function initCodeBlockActionButtons() {
     const codeBlocks = document.querySelectorAll('.code-block-wrapper');
     codeBlocks.forEach(wrapper => {
-      const btn = wrapper.querySelector('.code-copy-btn');
       const pre = wrapper.querySelector('pre');
-      if (btn && pre) {
-        btn.addEventListener('click', async () => {
+      const copyBtn = wrapper.querySelector('.code-copy-btn');
+      const chatgptBtn = wrapper.querySelector('.code-chatgpt-btn');
+      const claudeBtn = wrapper.querySelector('.code-claude-btn');
+
+      if (!pre) return;
+
+      if (copyBtn) {
+        copyBtn.addEventListener('click', async () => {
           try {
-            await navigator.clipboard.writeText(pre.textContent);
-            const orig = btn.innerHTML;
-            btn.innerHTML = '<span>Copied!</span>';
-            setTimeout(() => {
-              btn.innerHTML = orig;
-            }, 1800);
+            await navigator.clipboard.writeText(pre.textContent.trim());
+            const orig = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<span>✓ Copied!</span>';
+            showToast('✓ Code copied to clipboard!');
+            setTimeout(() => { copyBtn.innerHTML = orig; }, 1800);
           } catch (e) {
             console.error('Copy failed', e);
           }
         });
       }
-    });
 
-    // Initial render
-    updateInjectedPrompt();
-    initFaqAccordions();
-    initFeedbackButtons();
+      if (chatgptBtn) {
+        chatgptBtn.addEventListener('click', () => {
+          launchChatGPT(pre.textContent.trim(), chatgptBtn);
+        });
+      }
+
+      if (claudeBtn) {
+        claudeBtn.addEventListener('click', () => {
+          launchClaude(pre.textContent.trim(), claudeBtn);
+        });
+      }
+    });
   }
 
   function initFaqAccordions() {
@@ -275,6 +367,7 @@ Executing architectural delivery for: "${blueprintTitle}"...
         btnUp.classList.add('voted-up');
         count++;
         if (countSpan) countSpan.textContent = count;
+        showToast('Thank you for rating this blueprint!');
       });
     }
 
@@ -283,6 +376,7 @@ Executing architectural delivery for: "${blueprintTitle}"...
         if (localStorage.getItem(pageKey)) return;
         localStorage.setItem(pageKey, 'refine');
         btnDown.classList.add('voted-down');
+        showToast('Feedback noted. We will refine this blueprint.');
       });
     }
   }

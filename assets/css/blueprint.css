@@ -809,3 +809,74 @@
   word-break: break-word;
 }
 
+/* 5. Direct Code Block Action Buttons */
+.code-block-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.code-chatgpt-btn, .code-claude-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.code-chatgpt-btn:hover {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--brand-emerald);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.code-claude-btn:hover {
+  background: rgba(168, 85, 247, 0.2);
+  border-color: var(--text-highlight);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* 6. Floating Notification Toast */
+.ph-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #0f172a;
+  color: #fff;
+  border: 1px solid var(--brand-cyan);
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.25);
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.ph-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.ph-toast svg {
+  color: var(--brand-emerald);
+  flex-shrink: 0;
+}
+
+
