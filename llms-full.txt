@@ -1766,6 +1766,11 @@ Each blueprint enforces:
 
 - [Zero-Hallucination Structured JSON & Schema Extraction Blueprint](https://www.prompthookai.com/blueprints/zero-hallucination-json-extractor.html)
 
+## Frontier Models (2 Blueprints)
+
+- [xAI Grok 3 & Grok 2 Prompt Blueprints & Custom Personas](https://www.prompthookai.com/models/grok-3.html)
+- [Frontier Models System Prompts & Directives Hub](https://www.prompthookai.com/categories/frontier-models.html)
+
 ## Growth & Conversion Copywriting (1 Blueprints)
 
 - [B2B SaaS Cold Outreach & High-Conversion Sequence Blueprint](https://www.prompthookai.com/blueprints/b2b-saas-cold-outreach-sequence-engine.html)

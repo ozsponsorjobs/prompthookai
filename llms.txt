@@ -5,6 +5,7 @@
 Every blueprint on PromptHook AI features strict operational parameter binding (`{{VARIABLE}}`), adversarial diagnostic passes, anti-hallucination guardrails, and deterministic JSON/schema output constraints.
 
 ## Core Topic Hubs
+- [Frontier Models & Directives](https://www.prompthookai.com/categories/frontier-models.html): Custom personas, extended thinking scaffolds, and deterministic system prompts for Grok 3, Claude 3.7, and DeepSeek R1.
 - [Code & Software Engineering](https://www.prompthookai.com/categories/code-engineering.html): System directives for debugging, AST manipulation, automated test generation, and full-stack software development.
 - [Autonomous Agents & Tool-Use](https://www.prompthookai.com/categories/autonomous-agents.html): Multi-agent architectures, RAG pipelines, subagent coordination, and deterministic tool-calling schemas.
 - [Growth Marketing & Copywriting](https://www.prompthookai.com/categories/growth-marketing.html): High-conversion copy frameworks, B2B lead generation, and viral hook generation.
@@ -28,7 +29,7 @@ Every blueprint on PromptHook AI features strict operational parameter binding (
 - **Anthropic Claude 3.7 Sonnet / Claude 3.5 Sonnet**: Fully compatible with Claude Artifacts, extended thinking, and computer-use tool schemas.
 - **OpenAI GPT-4o / o1 / o3-mini**: Structured output JSON schemas, deterministic system role directives, and function-calling wrappers.
 - **DeepSeek R1 / DeepSeek V3**: Mathematical, algorithmic, and verifiable chain-of-thought protocols.
-- **xAI Grok 2 / Grok 3**: Custom instruction personas, real-time X/Twitter data integration directives, and unfiltered reasoning modes.
+- **xAI Grok 2 / Grok 3**: [xAI Grok 3 Model Calibration Hub](https://www.prompthookai.com/models/grok-3.html) - Custom instruction personas, real-time X/Twitter data integration directives, and unfiltered reasoning modes.
 - **Google Gemini 2.0 Flash / Pro**: Multimodal token processing, long-context window directives (1M+ tokens), and grounding search parameters.
 
 ## Machine-Readable Resources

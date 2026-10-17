@@ -181,6 +181,7 @@
 
           <div class="filter-pills" role="toolbar" aria-label="Filter blueprints by category">
             <button type="button" class="pill-btn active" data-filter="all">All Blueprints</button>
+            <button type="button" class="pill-btn" data-filter="frontier-models">Frontier Models (Grok & Claude)</button>
             <button type="button" class="pill-btn" data-filter="code-engineering">Coding & AST</button>
             <button type="button" class="pill-btn" data-filter="autonomous-agents">Agents & ReAct</button>
             <button type="button" class="pill-btn" data-filter="data-analytics">Data & JSON</button>
@@ -213,6 +214,39 @@
 
       <div class="blueprints-grid" id="blueprintsGrid">
         
+        <!-- Featured Card: Grok Customize (#1 Visitor Demand) -->
+        <article class="blueprint-card" data-category="frontier-models" data-tags="grok xai custom instructions persona frontier models system directive">
+          <div>
+            <div class="card-header-top">
+              <span class="card-category-badge" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3);">#1 Trending // 560+ Visits</span>
+              <span class="card-version-tag">v3.1.0</span>
+            </div>
+            <h3 class="card-title">
+              <a href="/2025/09/grok-customize.html">Grok Customize Prompt Blueprint</a>
+            </h3>
+            <p class="card-description">
+              Production-grade system directive and custom instructions framework for xAI Grok. Enforces strict zero-sycophancy guardrails, deep first-principles breakdown, and modular persona injection.
+            </p>
+          </div>
+          <div>
+            <div class="card-meta-list">
+              <div class="card-meta-item">Input: <span class="val">~580 tkn</span></div>
+              <div class="card-meta-item">Target: <span class="val">Grok 2 / 3</span></div>
+              <div class="card-meta-item">Truth Score: <span class="val">99.4%</span></div>
+            </div>
+            <div class="card-footer">
+              <div class="models-support">
+                <span class="model-tag" style="background: rgba(255,255,255,0.1); color: #fff;">xAI Grok 3</span>
+                <span class="model-tag">Grok 2</span>
+              </div>
+              <a href="/2025/09/grok-customize.html" class="btn-open-blueprint">
+                <span>Sandbox</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
         <!-- Blueprint Card 1 -->
         <article class="blueprint-card" data-category="code-engineering" data-tags="refactoring security typescript python owasp ast vitest">
           <div>
@@ -455,6 +489,15 @@
       </div>
 
       <div class="hubs-grid">
+        <div class="hub-card" style="border-color: rgba(239, 68, 68, 0.4); background: linear-gradient(180deg, rgba(239, 68, 68, 0.05) 0%, rgba(17, 24, 39, 0.6) 100%);">
+          <div class="hub-icon-box" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="hub-card-title">Frontier Models &amp; Directives</h3>
+          <p class="hub-card-desc">xAI Grok 3, Anthropic Claude 3.7 Thinking Mode, DeepSeek R1, and OpenAI o1/GPT-4o custom personas and reasoning blueprints.</p>
+          <a href="/categories/frontier-models.html" class="hub-card-link" style="color: #f87171;">Explore Cluster &rarr;</a>
+        </div>
+
         <div class="hub-card">
           <div class="hub-icon-box">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -477,7 +520,7 @@
           <div class="hub-icon-box">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
           </div>
-          <h3 class="hub-card-title">Data & Extraction</h3>
+          <h3 class="hub-card-title">Data &amp; Extraction</h3>
           <p class="hub-card-desc">Strict JSON schema enforcement, unstructured document parsing, and zero-hallucination data transformations.</p>
           <a href="/categories/data-analytics.html" class="hub-card-link">Explore Cluster &rarr;</a>
         </div>
@@ -502,6 +545,12 @@
       </div>
 
       <div class="hubs-grid">
+        <div class="hub-card" style="border-color: rgba(239, 68, 68, 0.35); background: linear-gradient(180deg, rgba(239, 68, 68, 0.04) 0%, rgba(17, 24, 39, 0.6) 100%);">
+          <h3 class="hub-card-title">xAI Grok 3 / Grok 2</h3>
+          <p class="hub-card-desc">First-principles reasoning, real-time X data synthesis, custom persona instructions, and unfiltered engineering directives.</p>
+          <a href="/models/grok-3.html" class="hub-card-link" style="color: #f87171;">View Grok Calibration &rarr;</a>
+        </div>
+
         <div class="hub-card">
           <h3 class="hub-card-title">Claude 3.7 Sonnet</h3>
           <p class="hub-card-desc">Anthropic flagship for hybrid reasoning, artifact creation, multi-file codebases, and zero-shortcut engineering audits.</p>
@@ -549,6 +598,7 @@
         <div>
           <h4 class="footer-col-title">Topic Silos</h4>
           <ul class="footer-link-list">
+            <li><a href="/categories/frontier-models.html">Frontier Models Hub</a></li>
             <li><a href="/categories/code-engineering.html">Code & Architecture</a></li>
             <li><a href="/categories/autonomous-agents.html">Autonomous Agents</a></li>
             <li><a href="/categories/data-analytics.html">Data & JSON Extraction</a></li>
@@ -561,6 +611,7 @@
         <div>
           <h4 class="footer-col-title">Model Hubs</h4>
           <ul class="footer-link-list">
+            <li><a href="/models/grok-3.html">xAI Grok 3 / Grok 2</a></li>
             <li><a href="/models/claude-sonnet-3-7.html">Claude 3.7 Sonnet</a></li>
             <li><a href="/models/gpt-4o.html">OpenAI GPT-4o</a></li>
             <li><a href="/models/deepseek-r1.html">DeepSeek R1</a></li>
