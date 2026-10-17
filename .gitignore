@@ -19,3 +19,7 @@ scripts/cluster_visitor_interests.py
 scripts/deep_visitor_analysis.py
 scripts/introspect_cf.py
 scripts/visitor_profile_audit.py
+scripts/audit_ad_boxes.py
+scripts/check_ad_placeholders.py
+scripts/remove_all_ad_placeholders.py
+scripts/test_remove_ads.py
