@@ -11,6 +11,9 @@ Each blueprint enforces:
 - Adversarial Diagnostic Guardrails & Anti-Hallucination Checks
 - Deterministic Output Formatting (JSON Schemas, Code, Markdown)
 
+## Official Publications & Engineering Guides
+- [The Superhuman AI Agent Playbook](https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook): The definitive engineering field manual covering production directives, multi-agent cognitive architecture, subagent orchestration, and zero-hallucination protocols for frontier models (Claude 3.7, GPT-4o, DeepSeek R1, Grok 3). Base price: $19.
+
 
 
 ## Autonomous Agents (148 Blueprints)

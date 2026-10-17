@@ -36,3 +36,7 @@ Every blueprint on PromptHook AI features strict operational parameter binding (
 - [Master Search Index](https://www.prompthookai.com/assets/data/search-index.json): Complete machine-readable JSON index of all 1,960 blueprints (<300KB) for instant client-side lookup.
 - [XML Master Sitemap](https://www.prompthookai.com/sitemap.xml): Complete URL sitemap of all published blueprints and category hubs.
 - [Full Context Index](https://www.prompthookai.com/llms-full.txt): Comprehensive catalogue of all topic clusters and blueprints for extended context LLMs.
+
+## Official Publications & Engineering Guides
+- [The Superhuman AI Agent Playbook](https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook): The definitive engineering field manual covering production directives, multi-agent cognitive architecture, subagent orchestration, and zero-hallucination protocols for frontier models (Claude 3.7, GPT-4o, DeepSeek R1, Grok 3).
+
