@@ -1,0 +1,37 @@
+# PromptHook AI
+
+> PromptHook AI is a production-grade registry and parameter-injection repository of hyper-optimized system directives, agentic architecture blueprints, and deterministic meta-prompts engineered for frontier Large Language Models including Claude 3.7 Sonnet, OpenAI GPT-4o & o1/o3-mini, DeepSeek R1/V3, xAI Grok 2/Grok 3, and Google Gemini 2.0 Flash.
+
+Every blueprint on PromptHook AI features strict operational parameter binding (`{{VARIABLE}}`), adversarial diagnostic passes, anti-hallucination guardrails, and deterministic JSON/schema output constraints.
+
+## Core Topic Hubs
+- [Code & Software Engineering](https://www.prompthookai.com/categories/code-engineering.html): System directives for debugging, AST manipulation, automated test generation, and full-stack software development.
+- [Autonomous Agents & Tool-Use](https://www.prompthookai.com/categories/autonomous-agents.html): Multi-agent architectures, RAG pipelines, subagent coordination, and deterministic tool-calling schemas.
+- [Growth Marketing & Copywriting](https://www.prompthookai.com/categories/growth-marketing.html): High-conversion copy frameworks, B2B lead generation, and viral hook generation.
+- [Programmatic SEO & Content](https://www.prompthookai.com/categories/seo-content-strategy.html): Programmatic SEO matrices, semantic keyword clusters, and content blueprints.
+- [Data Analytics & Extraction](https://www.prompthookai.com/categories/data-analytics.html): Statistical modeling, SQL query synthesis, and data visualization prompts.
+- [Customer Support & Triage](https://www.prompthookai.com/categories/customer-support.html): Triage workflows, sentiment deflection, and escalation matrices.
+
+## Top High-Impact Blueprints
+- [Grok Customize Prompt Blueprint](https://www.prompthookai.com/2025/09/grok-customize.html): Complete persona, reasoning, and system directives for xAI Grok custom instructions.
+- [Enterprise Bug Handling & Feature Debugging](https://www.prompthookai.com/2026/08/handle-the-bug-in-feature.html): Deterministic root-cause analysis, stack trace diagnosis, and regression mitigation.
+- [Claude Deep Reasoning & Chain-of-Thought](https://www.prompthookai.com/2026/08/claude-deep-prompt.html): Extended thinking protocols, artifact generation, and complex synthesis for Anthropic Claude.
+- [3D Physics Sandbox Architect](https://www.prompthookai.com/2026/08/3d-physics-sandbox-architect.html): Three.js, WebGL shader generation, and real-time physics simulation agent.
+- [High-End Technology UI/UX Redesign](https://www.prompthookai.com/2026/08/high-end-technology-inspired-website-ui-redesign.html): Modern aesthetic tokens, dark mode design systems, and responsive layout blueprints.
+- [Apple Store ASO Expert Blueprint](https://www.prompthookai.com/2026/09/apple-store-aso-expert-guide.html): App Store Optimization, keyword density modeling, and conversion rate maximization.
+- [Meta-Prompt Optimization & Audit Review](https://www.prompthookai.com/2026/09/prompt-optimization-review.html): Multi-pass evaluation matrix to audit, refine, and stress-test third-party system prompts.
+- [Developer Portfolio & GitHub Architecture](https://www.prompthookai.com/2025/05/professional-github-dashboard-for-portfolio-enhancement.html): GitHub profile metrics, automated CI/CD showcase, and engineering portfolio generation.
+- [Unofficial API Reverse Engineering](https://www.prompthookai.com/2025/05/create-an-unofficial-instagram-api.html): Reverse engineering network protocols, request signing, and proxy middleware construction.
+- [AI Productivity Artifact Generator](https://www.prompthookai.com/2026/07/-ai-productivity-artifact-generator.html): Autonomous widget, calculator, and interactive visual interface synthesizer.
+
+## Model Compatibility & Runtime Directives
+- **Anthropic Claude 3.7 Sonnet / Claude 3.5 Sonnet**: Fully compatible with Claude Artifacts, extended thinking, and computer-use tool schemas.
+- **OpenAI GPT-4o / o1 / o3-mini**: Structured output JSON schemas, deterministic system role directives, and function-calling wrappers.
+- **DeepSeek R1 / DeepSeek V3**: Mathematical, algorithmic, and verifiable chain-of-thought protocols.
+- **xAI Grok 2 / Grok 3**: Custom instruction personas, real-time X/Twitter data integration directives, and unfiltered reasoning modes.
+- **Google Gemini 2.0 Flash / Pro**: Multimodal token processing, long-context window directives (1M+ tokens), and grounding search parameters.
+
+## Machine-Readable Resources
+- [Master Search Index](https://www.prompthookai.com/assets/data/search-index.json): Complete machine-readable JSON index of all 1,960 blueprints (<300KB) for instant client-side lookup.
+- [XML Master Sitemap](https://www.prompthookai.com/sitemap.xml): Complete URL sitemap of all published blueprints and category hubs.
+- [Full Context Index](https://www.prompthookai.com/llms-full.txt): Comprehensive catalogue of all topic clusters and blueprints for extended context LLMs.

@@ -9,6 +9,13 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Local credentials
+# Local credentials & analytics scripts
 service_account.json
 scripts/service_account.json
+.env
+scripts/analyze_spike.py
+scripts/cf_analytics.py
+scripts/cluster_visitor_interests.py
+scripts/deep_visitor_analysis.py
+scripts/introspect_cf.py
+scripts/visitor_profile_audit.py
