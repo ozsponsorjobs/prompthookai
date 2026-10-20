@@ -12,6 +12,10 @@ Thumbs.db
 # Local credentials & analytics scripts
 service_account.json
 scripts/service_account.json
+google_tokens.json
+google_client_secret.json
+*token*.json
+*secret*.json
 .env
 scripts/analyze_spike.py
 scripts/cf_analytics.py

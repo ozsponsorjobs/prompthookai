@@ -1,0 +1,14 @@
+# Cloudflare Pages Headers Configuration
+/*
+  X-Robots-Tag: all, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Ensure XML sitemap and robots.txt have appropriate headers
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600

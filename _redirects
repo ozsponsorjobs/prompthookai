@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirect Rules
+# Enforce canonical www domain (SEO 301 Permanent Redirect)
+https://prompthookai.com/* https://www.prompthookai.com/:splat 301
+http://prompthookai.com/* https://www.prompthookai.com/:splat 301
+http://www.prompthookai.com/* https://www.prompthookai.com/:splat 301
