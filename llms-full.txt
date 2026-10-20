@@ -16,8 +16,12 @@ Each blueprint enforces:
 
 
 
-## Autonomous Agents (148 Blueprints)
+## Autonomous Agents (150 Blueprints)
 
+- [Grok 3 DeepSearch & Real-Time Intelligence Synthesis](https://www.prompthookai.com/2026/10/grok-3-deepsearch-realtime-intelligence.html)
+- [.cursorrules & CLAUDE.md Autonomous Codebase Directive](https://www.prompthookai.com/2026/10/cursorrules-claude-codebase-directive.html)
+- [Hybrid Reasoning & Extended Thinking Budget Controller](https://www.prompthookai.com/2026/10/hybrid-reasoning-thinking-budget-controller.html)
+- [Model Context Protocol (MCP) Tool Orchestrator](https://www.prompthookai.com/2026/10/mcp-server-tool-orchestrator.html)
 - [Small Business Loan Broker Agent](https://www.prompthookai.com/2026/09/small-business-loan-broker-agent.html)
 - [Requirement Analysis and Planning Agent](https://www.prompthookai.com/2026/09/requirement-analysis-and-planning-agent.html)
 - [Android AI App Security Specialist Task](https://www.prompthookai.com/2026/09/android-ai-app-security-specialist-task.html)

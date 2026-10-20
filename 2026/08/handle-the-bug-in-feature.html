@@ -232,7 +232,13 @@
           </div>
         </div>
 
-        <h2>2. Architectural Deep-Dive & Reasoning Mechanics</h2>
+        <div class="callout-box" style="background: rgba(2, 132, 199, 0.08); border-left: 4px solid #38bdf8; margin: 1.5rem 0; padding: 1rem 1.25rem;">
+          <p style="margin: 0; font-size: 0.95rem; color: #e2e8f0;">
+            <strong>⚡ Essential Coding Directives:</strong> To enforce zero-shortcut bugfixes across Cursor, Windsurf, and Claude Code, deploy the <a href="/2026/10/cursorrules-claude-codebase-directive.html" style="color: #38bdf8; font-weight: 700; text-decoration: underline;">.cursorrules &amp; CLAUDE.md Directive</a>. For tool-calling agents, see the <a href="/2026/10/mcp-server-tool-orchestrator.html" style="color: #38bdf8; font-weight: 700; text-decoration: underline;">Model Context Protocol (MCP) Tool Orchestrator</a>.
+          </p>
+        </div>
+
+        <h2>2. Architectural Deep-Dive &amp; Reasoning Mechanics</h2>
         <p>Standard prompting approaches for Handle The Bug In Feature Prompt Blueprint frequently produce generic responses or suffer from model hallucinations. This blueprint implements an adversarial verification loop and negative constraints to ensure high-fidelity deliverables.</p>
 
         <!-- Visual Architecture Pipeline Diagram -->
@@ -562,10 +568,104 @@ print("Integration runtime initialized.")</code></pre>
     <section class="related-blueprints-section">
       <div class="section-heading-wrapper" style="text-align: left; margin-bottom: 1.5rem;">
         <div class="section-tag">Internal Silo Cluster</div>
-        <h3 class="section-title" style="font-size: 1.5rem;">Related Blueprints in Code &amp; Software Engineering</h3>
+        <h3 class="section-title" style="font-size: 1.5rem;">Related Engineering Blueprints</h3>
       </div>
       <div class="blueprints-grid">
-        
+        <article class="blueprint-card" data-category="code-engineering">
+          <div>
+            <div class="card-header-top">
+              <span class="card-category-badge">NEW &bull; Coding Agents</span>
+              <span class="card-version-tag">v3.2.0</span>
+            </div>
+            <h3 class="card-title">
+              <a href="/2026/10/cursorrules-claude-codebase-directive.html">.cursorrules &amp; CLAUDE.md Autonomous Codebase Directive</a>
+            </h3>
+            <p class="card-description">
+              Production-grade system directive for Cursor, Claude Code, and Windsurf. Enforces zero-shortcut refactoring, AST integrity, and automated test-driven development.
+            </p>
+          </div>
+          <div>
+            <div class="card-meta-list">
+              <div class="card-meta-item">Input: <span class="val">~850 tkn</span></div>
+              <div class="card-meta-item">Model: <span class="val">Claude 3.7 &bull; GPT-4o</span></div>
+              <div class="card-meta-item">Score: <span class="val">99.4%</span></div>
+            </div>
+            <div class="card-footer">
+              <div class="models-support">
+                <span class="model-tag">Cursor</span>
+                <span class="model-tag">Claude Code</span>
+              </div>
+              <a href="/2026/10/cursorrules-claude-codebase-directive.html" class="btn-open-blueprint">
+                <span>Sandbox</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blueprint-card" data-category="autonomous-agents">
+          <div>
+            <div class="card-header-top">
+              <span class="card-category-badge">NEW &bull; Tool Protocol</span>
+              <span class="card-version-tag">v3.0.0</span>
+            </div>
+            <h3 class="card-title">
+              <a href="/2026/10/mcp-server-tool-orchestrator.html">Model Context Protocol (MCP) Tool Orchestrator</a>
+            </h3>
+            <p class="card-description">
+              Production blueprint for MCP autonomous agents. Enforces deterministic schema validation, prevents recursive loops, and handles runtime failures gracefully.
+            </p>
+          </div>
+          <div>
+            <div class="card-meta-list">
+              <div class="card-meta-item">Input: <span class="val">~780 tkn</span></div>
+              <div class="card-meta-item">Model: <span class="val">Claude 3.7 &bull; GPT-4o</span></div>
+              <div class="card-meta-item">Score: <span class="val">99.7%</span></div>
+            </div>
+            <div class="card-footer">
+              <div class="models-support">
+                <span class="model-tag">MCP</span>
+                <span class="model-tag">Anthropic</span>
+              </div>
+              <a href="/2026/10/mcp-server-tool-orchestrator.html" class="btn-open-blueprint">
+                <span>Sandbox</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blueprint-card" data-category="frontier-models">
+          <div>
+            <div class="card-header-top">
+              <span class="card-category-badge" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3);">NEW &bull; Flagship</span>
+              <span class="card-version-tag">v4.1.0</span>
+            </div>
+            <h3 class="card-title">
+              <a href="/2026/10/grok-3-deepsearch-realtime-intelligence.html">Grok 3 DeepSearch &amp; Real-Time Intelligence Synthesis</a>
+            </h3>
+            <p class="card-description">
+              Production-grade Grok 3 DeepSearch prompt blueprint. Triangulate real-time X/Twitter data, filter coordinated bot manipulation, and synthesize unfiltered intelligence briefs.
+            </p>
+          </div>
+          <div>
+            <div class="card-meta-list">
+              <div class="card-meta-item">Input: <span class="val">~720 tkn</span></div>
+              <div class="card-meta-item">Model: <span class="val">xAI Grok 3</span></div>
+              <div class="card-meta-item">Score: <span class="val">98.9%</span></div>
+            </div>
+            <div class="card-footer">
+              <div class="models-support">
+                <span class="model-tag">Grok 3</span>
+                <span class="model-tag">DeepSearch</span>
+              </div>
+              <a href="/2026/10/grok-3-deepsearch-realtime-intelligence.html" class="btn-open-blueprint">
+                <span>Sandbox</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 

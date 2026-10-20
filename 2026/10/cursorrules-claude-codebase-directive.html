@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCSR08B48N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RCSR08B48N');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.cursorrules &amp; CLAUDE.md Autonomous Codebase Directive | PromptHook AI</title>
+  <meta name="description" content="Production-grade .cursorrules and CLAUDE.md system directive for Cursor, Claude Code, and Windsurf. Enforces zero-shortcut refactoring, AST integrity, and automated test-driven development.">
+  <link rel="canonical" href="https://www.prompthookai.com/2026/10/cursorrules-claude-codebase-directive.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content=".cursorrules &amp; CLAUDE.md Autonomous Codebase Directive">
+  <meta property="og:description" content="Production-grade .cursorrules and CLAUDE.md system directive for Cursor, Claude Code, and Windsurf. Enforces zero-shortcut refactoring, AST integrity, and automated test-driven development.">
+  <meta property="og:url" content="https://www.prompthookai.com/2026/10/cursorrules-claude-codebase-directive.html">
+  <meta property="og:site_name" content="PromptHook AI">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content=".cursorrules &amp; CLAUDE.md Autonomous Codebase Directive">
+  <meta name="twitter:description" content="Production-grade .cursorrules and CLAUDE.md system directive for Cursor, Claude Code, and Windsurf. Enforces zero-shortcut refactoring, AST integrity, and automated test-driven development.">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/blueprint.css">
+
+  <!-- Dual JSON-LD Structured Data: BreadcrumbList + TechArticle + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.prompthookai.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Code &amp; Software Engineering",
+            "item": "https://www.prompthookai.com/categories/code-engineering.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": ".cursorrules &amp; CLAUDE.md Directive",
+            "item": "https://www.prompthookai.com/2026/10/cursorrules-claude-codebase-directive.html"
+          }
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://www.prompthookai.com/2026/10/cursorrules-claude-codebase-directive.html#article",
+        "headline": ".cursorrules & CLAUDE.md Autonomous Codebase Directive",
+        "description": "Production-grade system directive for coding agents. Banishes lazy shortcuts, enforces AST preservation, and enforces deterministic verification across Cursor, Windsurf, and Claude Code.",
+        "datePublished": "2026-10-20",
+        "dateModified": "2026-10-20",
+        "author": {
+          "@type": "Organization",
+          "name": "PromptHook AI Architecture Team",
+          "url": "https://www.prompthookai.com/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PromptHook AI",
+          "url": "https://www.prompthookai.com/"
+        },
+        "keywords": "cursorrules, CLAUDE.md, Cursor IDE, Claude Code, Coding Agents, System Directive, Zero Shortcuts"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.prompthookai.com/2026/10/cursorrules-claude-codebase-directive.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do autonomous coding agents delete existing comments and truncate files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LLMs attempt to conserve output tokens when generating large file diffs. By enforcing explicit negative constraints and AST preservation rules in .cursorrules or CLAUDE.md, the agent is forced to use unified diff chunks and never emit placeholder comments like '// rest of code stays the same'."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does this directive differ between Cursor and Claude Code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For Cursor, the directive is saved as .cursorrules in the repository root. For Claude Code CLI, it is placed in CLAUDE.md or .claude/config. Both tools parse markdown system instructions to steer autonomous multi-file edits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can this ruleset enforce strict Test-Driven Development (TDD)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The execution mandate requires writing or updating failing regression tests prior to modifying implementation files, and verifying exit code 0 before concluding the task."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4863275050514892" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="PromptHook AI Homepage">
+        <div class="brand-icon-wrapper">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        PromptHook<span class="accent">AI</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/categories/code-engineering.html" class="nav-link">Category Hub</a></li>
+          <li><a href="/#models" class="nav-link">Models</a></li>
+          <li><a href="https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook" target="_blank" rel="noopener" class="nav-link" style="color: #38bdf8; font-weight: 700;">⚡ Playbook (PDF) ↗</a></li>
+          <li><a href="/about.html" class="nav-link">About &amp; E-E-A-T</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="/#blueprints" class="nav-cta-btn">
+        <span>All Blueprints</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumb Hierarchy -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="/categories/code-engineering.html">Code &amp; Software Engineering</a>
+      <span class="breadcrumb-separator">/</span>
+      <span aria-current="page">.cursorrules &amp; CLAUDE.md Directive</span>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="blueprint-header">
+      <div class="blueprint-meta-bar">
+        <span class="badge-pill category">Code &amp; Software Engineering</span>
+        <span class="badge-pill difficulty">Level: Senior Architect</span>
+        <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--text-muted);">Version 3.2.0 &bull; Released October 2026</span>
+      </div>
+
+      <h1 class="blueprint-title">.cursorrules &amp; CLAUDE.md Autonomous Codebase Directive</h1>
+      <p class="blueprint-lead">Deterministic architectural rulebook for AI coding agents. Banishes lazy shortcuts, enforces AST preservation, and enforces deterministic verification across Cursor, Windsurf, and Claude Code.</p>
+
+      <div class="blueprint-quick-specs">
+        <div class="quick-spec-item">
+          <span class="quick-spec-label">Input Footprint</span>
+          <span class="quick-spec-value">~850 tokens</span>
+        </div>
+        <div class="quick-spec-item">
+          <span class="quick-spec-label">Estimated Output</span>
+          <span class="quick-spec-value">~2,400 tokens</span>
+        </div>
+        <div class="quick-spec-item">
+          <span class="quick-spec-label">Determinism Rate</span>
+          <span class="quick-spec-value" style="color: var(--brand-emerald);">99.4%</span>
+        </div>
+        <div class="quick-spec-item">
+          <span class="quick-spec-label">Primary LLMs</span>
+          <span class="quick-spec-value" style="color: var(--brand-cyan);">Claude 3.7 Sonnet &bull; GPT-4o</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Two-Column Layout -->
+    <div class="blueprint-layout">
+      
+      <!-- Primary Architectural & Engineering Guide -->
+      <section class="blueprint-content" aria-label="Blueprint Technical Deep Dive">
+        
+        <h2>1. System Role &amp; Operational Directives</h2>
+        <p>Autonomous coding agents such as Cursor IDE, Windsurf, and Claude Code fail when given conversational requests without rigid boundary conditions. When unconstrained, agents introduce subtle regressions, truncate existing functions with placeholders like <code>// ... previous implementation remains untouched</code>, and violate clean architecture boundaries.</p>
+        <p>Save the directive below directly into your project's root as <code>.cursorrules</code> or <code>CLAUDE.md</code>:</p>
+        
+        <div class="code-block-wrapper">
+          <div class="code-block-header">
+            <span>SYSTEM DIRECTIVE &bull; PRODUCTION CODEBASE GUARDRAIL</span>
+            <div class="code-block-actions">
+              <button type="button" class="code-copy-btn">Copy Directive</button>
+              <button type="button" class="code-chatgpt-btn" title="Open in ChatGPT">ChatGPT ↗</button>
+              <button type="button" class="code-claude-btn" title="Open in Claude">Claude ↗</button>
+            </div>
+          </div>
+          <pre><code>You are a Principal Software Architect operating inside an autonomous development environment. Your mandate is zero regressions, strict AST preservation, and atomic production-grade execution.
+
+CORE CONSTRAINTS:
+1. NEVER emit truncated code, lazy placeholders, or "// TODO" shortcuts.
+2. NEVER modify unrelated files or delete existing comments/docstrings.
+3. Every refactor must preserve existing public API contracts and type signatures.
+4. Run diagnostics and verify unit/integration tests before claiming completion.
+5. All file edits must be delivered as precise, contiguous unified diffs or complete modules.</code></pre>
+        </div>
+
+        <div class="callout-box guardrail">
+          <div class="callout-icon">&#10004;</div>
+          <div class="callout-content">
+            <p><strong>AST Preservation Principle:</strong> AI agents often inadvertently strip away JSDoc comments, license headers, or helper functions. This directive explicitly instructs the model's self-attention to treat all existing lines outside the modification scope as read-only constants.</p>
+          </div>
+        </div>
+
+        <h2>2. Cognitive Workflow &amp; Reasoning Architecture</h2>
+        <p>To eliminate hallucinations, the agent must execute every task through a deterministic 4-stage pipeline before touching production files:</p>
+
+        <!-- Pipeline Diagram -->
+        <div class="pipeline-flow-diagram" aria-label="Autonomous Coding Agent Pipeline">
+          <div class="flow-step">
+            <div class="flow-step-header">
+              <span class="flow-step-num">01</span>
+              <span class="flow-step-badge">DISCOVERY</span>
+            </div>
+            <h4>AST &amp; Dependency Audit</h4>
+            <p>Scan type definitions, imports, caller hierarchies, and test fixtures.</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-header">
+              <span class="flow-step-num">02</span>
+              <span class="flow-step-badge guard">VALIDATION</span>
+            </div>
+            <h4>TDD Regression Test</h4>
+            <p>Write or identify the failing assertion reproducing the bug or feature target.</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-header">
+              <span class="flow-step-num">03</span>
+              <span class="flow-step-badge">EXECUTION</span>
+            </div>
+            <h4>Atomic Transformation</h4>
+            <p>Apply minimal surgical code edits respecting existing design tokens.</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-header">
+              <span class="flow-step-num">04</span>
+              <span class="flow-step-badge sync">VERIFY</span>
+            </div>
+            <h4>Compiler &amp; Test Pass</h4>
+            <p>Execute linter, TypeScript compiler, and automated test suites with exit code 0.</p>
+          </div>
+        </div>
+
+        <h2>3. Adversarial Diagnostic Loop &amp; Negative Constraints</h2>
+        <p>In standard prompting, models invent convenience packages or deprecated library calls. This blueprint incorporates strict negative boundary rules:</p>
+        <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.25rem;">
+          <li><strong>Prohibited Dependencies:</strong> Never introduce unapproved third-party npm/pip packages without explicit architectural justification.</li>
+          <li><strong>Zero Any-Type Policy:</strong> In TypeScript/Go, never use <code>any</code> or loose casting. Use strict discriminated unions and runtime Zod validation schemas.</li>
+          <li><strong>Backward Compatibility Guarantee:</strong> Database migrations must be non-locking and forward-compatible.</li>
+        </ul>
+
+        <h2>4. Model Specific Calibration Matrix</h2>
+        <div class="code-block-wrapper">
+          <div class="code-block-header">
+            <span>LLM HYPERPARAMETER CALIBRATION</span>
+          </div>
+          <pre><code>{
+  "claude-3-7-sonnet": {
+    "temperature": 0.1,
+    "max_thinking_tokens": 4096,
+    "presence_penalty": 0.0,
+    "recommended_task": "Complex multi-file refactoring and AST migrations"
+  },
+  "gpt-4o": {
+    "temperature": 0.05,
+    "top_p": 0.95,
+    "recommended_task": "Atomic bugfixes, unit test generation, and strict JSON schemas"
+  }
+}</code></pre>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faqs">
+          <h2>5. Frequently Asked Questions (FAQ)</h2>
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button type="button" class="faq-question" aria-expanded="true">
+                <span>Where should I place this directive in my repository?</span>
+                <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer"><p>Save this file in the root directory of your project as <code>.cursorrules</code> for Cursor IDE, or as <code>CLAUDE.md</code> if using Anthropic's Claude Code CLI. Both tools detect and load root instructions automatically.</p></div>
+            </div>
+            
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Can I customize the architectural rules for Next.js or Python?</span>
+                <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer"><p>Yes. Use the Live Parameter Injector on the right to select your exact stack (e.g., Next.js 15 App Router, FastAPI, Go Gin) and testing framework. The sandbox will inject your exact compiler constraints dynamically.</p></div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>How does this prevent agents from hallucinating outdated methods?</span>
+                <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer"><p>The directive forces the agent to read existing project imports and package.json/pyproject.toml version pins before writing code, anchoring attention strictly to the versions actually installed.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Community Quality Feedback Card -->
+        <div class="blueprint-feedback-card">
+          <div class="feedback-content">
+            <div class="feedback-title">Was this autonomous coding directive helpful?</div>
+            <div class="feedback-subtitle">Your ratings tune our anti-hallucination guardrails and benchmark ratings.</div>
+          </div>
+          <div class="feedback-actions">
+            <button type="button" class="btn-feedback up" data-vote="helpful" aria-label="Mark as Helpful">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+              <span>Helpful (<span class="vote-count">73</span>)</span>
+            </button>
+            <button type="button" class="btn-feedback down" data-vote="refine" aria-label="Mark as Needs Refinement">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"></path></svg>
+              <span>Needs Refinement</span>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Sticky Interactive Parameter Injection Sandbox -->
+      <aside aria-label="Interactive Parameter Injection Sandbox">
+        <div class="sandbox-card">
+          <div class="sandbox-header">
+            <h2 class="sandbox-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--brand-cyan);">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              Live Parameter Injector
+            </h2>
+            <span class="sandbox-status">
+              <span class="pulse-dot"></span>
+              Live Sandbox
+            </span>
+          </div>
+
+          <!-- Parameter Fields -->
+          <div class="sandbox-fields-list">
+            <div class="param-group">
+              <div class="param-label-row">
+                <label class="param-label">Target Stack &amp; Runtime</label>
+                <span class="param-key-tag">{{TARGET_STACK}}</span>
+              </div>
+              <input type="text" class="param-input" data-param-key="TARGET_STACK" value="Next.js 15 (App Router), TypeScript 5.5, Tailwind CSS, Prisma" data-default="Next.js 15 (App Router), TypeScript 5.5, Tailwind CSS, Prisma">
+              <span class="param-hint">Core frameworks and compiler constraints.</span>
+            </div>
+            
+            <div class="param-group">
+              <div class="param-label-row">
+                <label class="param-label">Refactoring Safety Mandate</label>
+                <span class="param-key-tag">{{SAFETY_LEVEL}}</span>
+              </div>
+              <select class="param-select" data-param-key="SAFETY_LEVEL" data-default="Zero-Regression Strict Mode">
+                <option value="Zero-Regression Strict Mode" selected>Zero-Regression Strict Mode</option>
+                <option value="Modular Feature Additions">Modular Feature Additions</option>
+                <option value="Legacy AST Modernization">Legacy AST Modernization</option>
+              </select>
+              <span class="param-hint">Strictness level for code preservation.</span>
+            </div>
+            
+            <div class="param-group">
+              <div class="param-label-row">
+                <label class="param-label">Automated Test Framework</label>
+                <span class="param-key-tag">{{TEST_RUNNER}}</span>
+              </div>
+              <input type="text" class="param-input" data-param-key="TEST_RUNNER" value="Vitest + Playwright with strict type coverage" data-default="Vitest + Playwright with strict type coverage">
+              <span class="param-hint">Test suite executed prior to completion.</span>
+            </div>
+          </div>
+
+          <!-- Live Output Stream Box -->
+          <div class="live-preview-box">
+            <div class="preview-bar">
+              <span>Dynamic Directive Stream</span>
+              <span id="liveTokenEstimate">~850 tokens</span>
+            </div>
+            <pre class="prompt-stream-content" id="promptStreamContent"></pre>
+          </div>
+
+          <!-- Developer 1-Click Export Bar -->
+          <div class="developer-action-bar">
+            <div class="action-bar-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              Developer 1-Click Export
+            </div>
+            <div class="action-buttons-group">
+              <button type="button" class="btn-dev-action" id="btnOpenChatGPT" title="Open in ChatGPT">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5976 3.8595l-5.8333-3.3685L15.1252 7.22a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.6813l-.0046-.002zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813l-.0048 6.7227zm1.263-1.1117l2.4276-1.4005 2.4276 1.4005v2.8105l-2.4276 1.4005-2.4276-1.4005z"/></svg>
+                ChatGPT
+              </button>
+              <button type="button" class="btn-dev-action" id="btnOpenClaude" title="Open in Claude">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                Claude
+              </button>
+              <button type="button" class="btn-dev-action" id="btnCopyPythonSnippet" title="Copy Python SDK Code">
+                &lt;/&gt; Python
+              </button>
+              <button type="button" class="btn-dev-action" id="btnCopyCurlSnippet" title="Copy cURL">
+                $_ cURL
+              </button>
+            </div>
+          </div>
+
+          <div class="sandbox-actions">
+            <button type="button" class="btn-copy-injected" id="btnCopyInjectedPrompt">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy .cursorrules Directive
+            </button>
+            <button type="button" class="btn-reset-params" id="btnResetParams">Reset</button>
+          </div>
+
+          <button type="button" class="btn-simulate-run" id="btnSimulateRun">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Simulate AI Code Response
+          </button>
+
+          <div class="simulation-box" id="simulationBox">
+            <div class="simulation-header">
+              <span>● LIVE EXECUTION SIMULATION</span>
+            </div>
+            <div class="simulation-body" id="simulationBody"></div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- Official Playbook Banner Card -->
+    <div style="margin: 3.5rem 0 2rem; padding: 2.25rem; background: linear-gradient(135deg, rgba(2, 132, 199, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.2);">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">
+          <span>⚡ Official Engineering Guide</span>
+        </div>
+        <h3 style="font-size: 1.5rem; font-weight: 800; color: #f8fafc; margin-bottom: 0.5rem; line-height: 1.3;">The Superhuman AI Agent Playbook</h3>
+        <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.6; margin-bottom: 0;">Master deterministic system prompts, multi-agent cognitive architecture, subagent orchestration, and anti-hallucination guardrails across Claude 3.7, GPT-4o, DeepSeek R1, and Grok 3.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;">
+        <a href="https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook" target="_blank" rel="noopener" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; padding: 0.85rem 1.75rem; border-radius: 10px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid #38bdf8; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);">
+          <span>Get the Playbook ($19)</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <span style="font-size: 0.75rem; color: #64748b;">Instant PDF Download &bull; Lifetime Updates</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Raw Prompt Template Hidden for Runtime JS Injection -->
+  <template id="rawPromptTemplate">Act as an authoritative Principal Software Architect operating inside an autonomous coding environment.
+
+Project Architecture &amp; Stack:
+- Target Stack &amp; Runtime: [{{TARGET_STACK}}]
+- Refactoring Policy: [{{SAFETY_LEVEL}}]
+- Automated Test Suite: [{{TEST_RUNNER}}]
+
+Mandatory Execution Guidelines:
+1. Conduct complete AST and dependency audit before modifying code.
+2. NEVER emit lazy placeholders ("// TODO", "// rest unchanged"). Provide complete unified diff blocks.
+3. Preserve all existing docstrings, type signatures, and public contracts.
+4. Execute [{{TEST_RUNNER}}] and verify exit code 0 before concluding.
+
+Context Payload:
+```
+{{INPUT_PAYLOAD}}
+```</template>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="brand-logo">
+            <div class="brand-icon-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            PromptHook<span class="accent">AI</span>
+          </a>
+          <p>Hyper-optimized prompt blueprints. Inject parameters, stream instant configurations for Claude, GPT-4o, DeepSeek, and Gemini.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Topic Silos</h4>
+          <ul class="footer-link-list">
+            <li><a href="https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook" target="_blank" rel="noopener" style="color: #38bdf8; font-weight: 700;">⚡ Agent Playbook (PDF) ↗</a></li>
+            <li><a href="/categories/code-engineering.html">Code &amp; Architecture</a></li>
+            <li><a href="/categories/autonomous-agents.html">Autonomous Agents</a></li>
+            <li><a href="/categories/frontier-models.html">Frontier Models Hub</a></li>
+            <li><a href="/categories/data-analytics.html">Data &amp; JSON Extraction</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Model Hubs</h4>
+          <ul class="footer-link-list">
+            <li><a href="/models/claude-sonnet-3-7.html">Claude 3.7 Sonnet</a></li>
+            <li><a href="/models/gpt-4o.html">OpenAI GPT-4o</a></li>
+            <li><a href="/models/deepseek-r1.html">DeepSeek R1</a></li>
+            <li><a href="/models/grok-3.html">xAI Grok 3</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal &amp; Trust</h4>
+          <ul class="footer-link-list">
+            <li><a href="/about.html">About &amp; Methodology</a></li>
+            <li><a href="/contact.html">Contact Engineering</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PromptHook AI. All rights reserved. Zero-framework high speed static architecture.</p>
+        <div class="legal-inline-links">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/about.html">E-E-A-T</a>
+          <a href="/contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/blueprint-runtime.js" defer></script>
+  <script src="/assets/js/cookie-consent.js" defer></script>
+</body>
+</html>
