@@ -5,6 +5,7 @@
 Every blueprint on PromptHook AI features strict operational parameter binding (`{{VARIABLE}}`), adversarial diagnostic passes, anti-hallucination guardrails, and deterministic JSON/schema output constraints.
 
 ## Core Topic Hubs
+- [.cursorrules & CLAUDE.md Hub & Generator](https://www.prompthookai.com/cursorrules.html): Interactive generator and curated repository of 30+ production directives for Cursor, Claude Code, and Windsurf across Next.js 15, FastAPI, React 19, Supabase, and Flutter.
 - [Frontier Models & Directives](https://www.prompthookai.com/categories/frontier-models.html): Custom personas, extended thinking scaffolds, and deterministic system prompts for Grok 3, Claude 3.7, and DeepSeek R1.
 - [Code & Software Engineering](https://www.prompthookai.com/categories/code-engineering.html): System directives for debugging, AST manipulation, automated test generation, and full-stack software development.
 - [Autonomous Agents & Tool-Use](https://www.prompthookai.com/categories/autonomous-agents.html): Multi-agent architectures, RAG pipelines, subagent coordination, and deterministic tool-calling schemas.

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCSR08B48N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RCSR08B48N');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.cursorrules &amp; CLAUDE.md Hub: 30+ Production Directives &amp; Generator | PromptHook AI</title>
+  <meta name="description" content="Production-grade .cursorrules, CLAUDE.md, and Windsurf directives for Next.js 15, FastAPI, React 19, Flutter, Supabase, Laravel, and Python. 1-click copy &amp; instant file download.">
+  <meta name="keywords" content="cursorrules, cursor rules, claude code directives, claude.md, windsurf rules, cursor ai rules nextjs, cursor rules python, cursor directory, ai coding rules">
+  <link rel="canonical" href="https://www.prompthookai.com/cursorrules.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prompthookai.com/cursorrules.html">
+  <meta property="og:title" content=".cursorrules &amp; CLAUDE.md Hub: 30+ Production Directives &amp; Generator">
+  <meta property="og:description" content="Curated repository of battle-tested .cursorrules and CLAUDE.md directives for Cursor, Claude Code, and Windsurf. Free 1-click copy and instant download.">
+  <meta property="og:site_name" content="PromptHook AI">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content=".cursorrules &amp; CLAUDE.md Directory | PromptHook AI">
+  <meta name="twitter:description" content="Stop AI code hallucinations. 30+ battle-tested .cursorrules and CLAUDE.md directives ready to download.">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/blueprint.css">
+
+  <style>
+    /* Specialized Hub Styling */
+    .hub-hero {
+      padding: 4.5rem 0 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .hub-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(139, 92, 246, 0.08) 50%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hub-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius-full);
+      color: var(--brand-cyan);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+    .hub-title {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+    .hub-title span.grad {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hub-desc {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 44rem;
+      margin: 0 auto 2.5rem;
+      line-height: 1.6;
+    }
+
+    /* Generator Box */
+    .generator-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-bottom: 3.5rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .generator-box::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-brand);
+    }
+    .generator-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .generator-header h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .gen-controls-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .gen-control-group label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+    .gen-select, .gen-input {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 0.65rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .gen-select:focus, .gen-input:focus {
+      border-color: var(--border-accent);
+    }
+    .gen-output-preview {
+      background: #060910;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      max-height: 280px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      margin-bottom: 1.25rem;
+    }
+    .gen-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .btn-gen-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+    .btn-download-primary {
+      background: #38bdf8;
+      color: #030712;
+    }
+    .btn-download-primary:hover {
+      background: #7dd3fc;
+      transform: translateY(-1px);
+    }
+    .btn-copy-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+    .btn-copy-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Rules Grid */
+    .rules-filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .rule-category-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--brand-cyan);
+      color: #090d16;
+      border-color: var(--brand-cyan);
+    }
+    .search-filter-input {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 0.5rem 1rem 0.5rem 2.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      width: 260px;
+      outline: none;
+      position: relative;
+    }
+    .search-wrapper {
+      position: relative;
+    }
+    .search-wrapper svg {
+      position: absolute;
+      left: 0.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+    }
+
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    .rule-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .rule-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.3);
+    }
+    .rule-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+    }
+    .rule-stack-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .rule-editor-badge {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-sm);
+    }
+    .rule-card h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #f8fafc;
+    }
+    .rule-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .rule-footer-actions {
+      display: flex;
+      gap: 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .btn-rule-copy, .btn-rule-dl {
+      flex: 1;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-primary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: background 0.15s;
+    }
+    .btn-rule-copy:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+    .btn-rule-dl:hover {
+      background: rgba(168, 85, 247, 0.15);
+      border-color: #c084fc;
+      color: #c084fc;
+    }
+
+    /* Toast Notification */
+    #copyToast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #10b981;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);
+      display: none;
+      z-index: 9999;
+      animation: fadeIn 0.2s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Multi-JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": ".cursorrules & CLAUDE.md Hub",
+        "operatingSystem": "All",
+        "applicationCategory": "DeveloperApplication",
+        "description": "Curated collection and generator of production-grade .cursorrules and CLAUDE.md system directives for Cursor, Claude Code, and Windsurf.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.prompthookai.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Cursorrules Hub", "item": "https://www.prompthookai.com/cursorrules.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4863275050514892" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="PromptHook AI Homepage">
+        <div class="brand-icon-wrapper">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        PromptHook<span class="accent">AI</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/cursorrules.html" class="nav-link active" style="color: #38bdf8; font-weight: 700;">⚡ .cursorrules Hub</a></li>
+          <li><a href="/categories/frontier-models.html" class="nav-link">Frontier Models</a></li>
+          <li><a href="/models/grok-3.html" class="nav-link">Grok 3</a></li>
+          <li><a href="https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook" target="_blank" rel="noopener" class="nav-link" style="color: #c084fc; font-weight: 700;">Playbook (PDF) ↗</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <a href="#rulesGrid" class="nav-cta-btn">
+        <span>Browse 30+ Rules</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hub-hero">
+      <div class="hub-badge">
+        <span>⚡ THE DEVELOPER DIRECTORY // 2026 EDITION</span>
+      </div>
+      <h1 class="hub-title">
+        The Ultimate <span class="grad">.cursorrules &amp; CLAUDE.md</span> Hub
+      </h1>
+      <p class="hub-desc">
+        Stop AI code hallucination, phantom imports, and unwanted refactors. Download battle-tested system directives tailored for Cursor, Claude Code, and Windsurf across 30+ production tech stacks.
+      </p>
+    </section>
+
+    <!-- Interactive Generator Tool -->
+    <section class="generator-box" id="generator">
+      <div class="generator-header">
+        <div>
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Instant Custom Directive Generator
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Select your project parameters to synthesize an enforceable ruleset in real time.</p>
+        </div>
+        <span class="hub-badge" style="margin: 0; padding: 0.2rem 0.75rem; font-size: 0.75rem;">Client-Side • Free</span>
+      </div>
+
+      <div class="gen-controls-grid">
+        <div class="gen-control-group">
+          <label for="genFramework">Framework / Ecosystem</label>
+          <select id="genFramework" class="gen-select">
+            <option value="nextjs15">Next.js 15 (App Router &amp; Server Actions)</option>
+            <option value="fastapi">FastAPI (Python 3.12 &amp; Pydantic v2)</option>
+            <option value="react19">React 19 (Server Components &amp; Hooks)</option>
+            <option value="flutter">Flutter &amp; Dart (Bloc / Clean Arch)</option>
+            <option value="laravel11">Laravel 11 (PHP 8.3 &amp; Pest)</option>
+            <option value="supabase">Supabase &amp; PostgreSQL (RLS &amp; Edge)</option>
+            <option value="go">Go &amp; Gin (Idiomatic &amp; Concurrency)</option>
+            <option value="rust">Rust &amp; Axum (Strict Type Safety)</option>
+          </select>
+        </div>
+
+        <div class="gen-control-group">
+          <label for="genEditor">Target Coding Agent</label>
+          <select id="genEditor" class="gen-select">
+            <option value="cursor">Cursor (Composer / Agent Mode)</option>
+            <option value="claude">Claude Code (CLAUDE.md Directive)</option>
+            <option value="windsurf">Windsurf (Cascade Ruleset)</option>
+          </select>
+        </div>
+
+        <div class="gen-control-group">
+          <label for="genStrictness">Hallucination Guardrail</label>
+          <select id="genStrictness" class="gen-select">
+            <option value="production">Production Strict (No placeholders, full tests)</option>
+            <option value="anti_sycophancy">Zero Sycophancy (Challenge flawed assumptions)</option>
+            <option value="concise">Ultra Minimal (High density, zero chattiness)</option>
+          </select>
+        </div>
+
+        <div class="gen-control-group">
+          <label for="genTesting">Testing Discipline</label>
+          <select id="genTesting" class="gen-select">
+            <option value="vitest">Vitest / Jest</option>
+            <option value="pytest">Pytest / Asyncio</option>
+            <option value="playwright">Playwright E2E</option>
+            <option value="none">Standard Unit Assertions</option>
+          </select>
+        </div>
+      </div>
+
+      <label style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; display: block; font-weight: 600;">Generated Directive Preview:</label>
+      <pre class="gen-output-preview" id="genPreview"></pre>
+
+      <div class="gen-actions">
+        <button type="button" class="btn-gen-action btn-download-primary" id="btnDownloadGen">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download .cursorrules
+        </button>
+        <button type="button" class="btn-gen-action btn-download-primary" style="background: #a855f7; color: #fff;" id="btnDownloadClaude">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          Download CLAUDE.md
+        </button>
+        <button type="button" class="btn-gen-action btn-copy-secondary" id="btnCopyGen">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          Copy to Clipboard
+        </button>
+      </div>
+    </section>
+
+    <!-- Monetization / Superhuman Agent Playbook Callout -->
+    <div style="background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%); border: 1px solid rgba(192, 132, 252, 0.3); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: #c084fc; background: rgba(192, 132, 252, 0.15); padding: 0.25rem 0.6rem; border-radius: var(--radius-sm);">Featured Field Guide</span>
+        <h3 style="font-size: 1.3rem; font-weight: 800; margin: 0.5rem 0 0.3rem;">The Superhuman AI Agent Playbook (2026 Edition)</h3>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 40rem;">Step-by-step blueprints to orchestrate multi-agent coding swarms, deterministic tools, and automated bug regression in Cursor and Claude Code.</p>
+      </div>
+      <a href="https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook" target="_blank" rel="noopener" style="background: #c084fc; color: #0f172a; font-weight: 800; font-size: 0.95rem; padding: 0.8rem 1.6rem; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s;">
+        <span>Get Playbook ($19) ↗</span>
+      </a>
+    </div>
+
+    <!-- Pre-built Rules Gallery -->
+    <div class="rules-filter-bar" id="rulesGrid">
+      <div class="rule-category-tabs">
+        <button type="button" class="tab-btn active" data-cat="all">All (30+)</button>
+        <button type="button" class="tab-btn" data-cat="web">Full-Stack Web</button>
+        <button type="button" class="tab-btn" data-cat="backend">Backend &amp; API</button>
+        <button type="button" class="tab-btn" data-cat="mobile">Mobile</button>
+        <button type="button" class="tab-btn" data-cat="ai">AI &amp; Data</button>
+        <button type="button" class="tab-btn" data-cat="infra">Infra &amp; DB</button>
+      </div>
+
+      <div class="search-wrapper">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="ruleSearchInput" class="search-filter-input" placeholder="Search rules (e.g. Next.js, Rust)..." aria-label="Filter rules">
+      </div>
+    </div>
+
+    <div class="rules-grid" id="rulesContainer">
+      <!-- Rule Cards injected by JS / static markup -->
+    </div>
+
+  </main>
+
+  <!-- Copy Notification Toast -->
+  <div id="copyToast">✓ Copied to clipboard!</div>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="margin-top: 4rem; padding: 3rem 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+    <div class="container">
+      <p>&copy; 2026 PromptHook AI. All .cursorrules and CLAUDE.md files are released under the MIT Open-Source License.</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="/" style="color: var(--text-secondary); margin: 0 0.5rem;">Home</a> &bull;
+        <a href="/cursorrules.html" style="color: var(--brand-cyan); margin: 0 0.5rem;">.cursorrules Hub</a> &bull;
+        <a href="/categories/frontier-models.html" style="color: var(--text-secondary); margin: 0 0.5rem;">Frontier Models</a> &bull;
+        <a href="/privacy.html" style="color: var(--text-secondary); margin: 0 0.5rem;">Privacy</a> &bull;
+        <a href="/terms.html" style="color: var(--text-secondary); margin: 0 0.5rem;">Terms</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    // 30+ Battle-Tested Rules Database
+    const RULES_DATA = [
+      {
+        id: "nextjs15",
+        name: "Next.js 15 & React 19 Strict",
+        category: "web",
+        editor: "Cursor & Claude",
+        tag: "Next.js 15",
+        desc: "Enforces App Router, Server Actions, Turbopack optimizations, zero legacy useEffect for data fetching, and strict TypeScript types.",
+        content: `You are an expert Next.js 15, React 19, and TypeScript software architect.
+
+CORE ARCHITECTURAL RULES:
+1. APP ROUTER EXCLUSIVELY: Never generate Pages Router code. Use app/ directory with Server Components by default.
+2. SERVER ACTIONS: Use Server Actions ('use server') for mutations with revalidatePath() or revalidateTag().
+3. CLIENT BOUNDARIES: Place 'use client' only at leaf components requiring interactivity or browser APIs.
+4. TYPE SAFETY: No 'any'. Strict interfaces for all component props, action responses, and database payloads.
+5. TAILWIND CSS: Use Tailwind v4 utility classes. Keep class strings clean and organized.
+6. NO PLACEHOLDERS: Never output '// TODO: implement later'. Provide complete, executable code.`
+      },
+      {
+        id: "fastapi",
+        name: "FastAPI & Python 3.12 Async",
+        category: "backend",
+        editor: "Cursor & Claude",
+        tag: "FastAPI",
+        desc: "Enforces asynchronous endpoints, Pydantic v2 schemas, strict type hints, dependency injection, and clean exception handling.",
+        content: `You are a Principal Backend Architect specializing in FastAPI and Python 3.12+.
+
+CORE PRINCIPLES:
+1. ASYNC FIRST: All route handlers must be async def unless blocking synchronous CPU-bound operations.
+2. PYDANTIC V2: Use pydantic.BaseModel with ConfigDict and strict field validation. No Pydantic v1 syntax.
+3. DEPENDENCY INJECTION: Use Depends() for database sessions, authentication, and service locators.
+4. ERROR HANDLING: Raise HTTPException with explicit status codes and RFC-7807 compliant error payloads.
+5. TYPE ANNOTATIONS: Strict PEP 484/604 annotations (e.g. str | None, list[dict[str, Any]]).`
+      },
+      {
+        id: "claude-code",
+        name: "Claude Code CLI System Directive",
+        category: "ai",
+        editor: "Claude Code CLI",
+        tag: "CLAUDE.md",
+        desc: "Root architecture directive for Anthropic's Claude Code terminal agent. Enforces test verification and minimal diffs.",
+        content: `# CLAUDE.md - Workspace Operational Directive
+
+## Build & Test Commands
+- Run Tests: \`pytest -v\` or \`pnpm test\`
+- Typecheck: \`pnpm tsc --noEmit\`
+- Linting: \`pnpm lint\`
+
+## Code Philosophy
+- Always read existing file implementations before proposing modifications.
+- Minimal Diffs: Touch only lines directly related to the user request.
+- Verification: Always run the test suite after modifying any logic.
+- No Assumptions: When requirements are ambiguous, ask concise clarifying questions.`
+      },
+      {
+        id: "flutter",
+        name: "Flutter & Dart Clean Architecture",
+        category: "mobile",
+        editor: "Cursor / Windsurf",
+        tag: "Flutter",
+        desc: "State management via Bloc/Cubit, immutable models with Freezed, clean repository separation, and zero UI business logic.",
+        content: `You are a Senior Flutter & Dart Mobile Engineer.
+
+DIRECTIVES:
+1. STATE MANAGEMENT: Use flutter_bloc exclusively. Separate Events, States, and Blocs.
+2. CLEAN SEPARATION: Presentation Layer -> Domain (UseCases/Entities) -> Data (Repositories/DataSources).
+3. IMMUTABILITY: Use Freezed or Equatable for all state models.
+4. CONST CONSTRUCTORS: Use const constructors wherever possible for optimal widget rebuild performance.
+5. RESPONSIVE LAYOUTS: Utilize LayoutBuilder and MediaQuery with zero hardcoded pixel dimensions.`
+      },
+      {
+        id: "supabase",
+        name: "Supabase & PostgreSQL RLS",
+        category: "infra",
+        editor: "Cursor / Windsurf",
+        tag: "Supabase",
+        desc: "Enforces strict Row Level Security (RLS) policies, idempotent SQL migrations, TypeScript typegen, and edge function conventions.",
+        content: `You are a Database Reliability Engineer and Supabase Architect.
+
+STRICT PROTOCOLS:
+1. RLS ENFORCEMENT: Never create a table without immediately enabling 'ALTER TABLE ... ENABLE ROW LEVEL SECURITY;'.
+2. POLICY LEAST PRIVILEGE: Write explicit SELECT, INSERT, UPDATE, DELETE policies using auth.uid().
+3. IDEMPOTENT MIGRATIONS: All SQL migrations must use 'IF NOT EXISTS' and safe constraint checks.
+4. TYPESCRIPT GENERATION: Align all query models with generated Database schema types.`
+      },
+      {
+        id: "laravel11",
+        name: "Laravel 11 & Pest Architecture",
+        category: "web",
+        editor: "Cursor & Claude",
+        tag: "Laravel 11",
+        desc: "PHP 8.3 strict types, single-responsibility FormRequests, API resources, Eloquent optimization, and Pest unit tests.",
+        content: `You are a Senior Laravel 11 and Modern PHP 8.3+ Architect.
+
+STRICT CONVENTIONS:
+1. STRICT TYPES: Every file must declare(strict_types=1);.
+2. FORM REQUESTS: Never validate in controller methods. Generate dedicated FormRequest classes.
+3. API RESOURCES: Always transform Eloquent responses via JsonResource.
+4. QUERY EFFICIENCY: Prevent N+1 queries using with() and strict lazy loading prevention in local development.
+5. TESTING: Write concise, functional Pest PHP tests for all endpoints.`
+      },
+      {
+        id: "go-gin",
+        name: "Go & Gin High-Throughput API",
+        category: "backend",
+        editor: "Cursor / Windsurf",
+        tag: "Go / Gin",
+        desc: "Idiomatic Go concurrency, context propagation, structured logging, zero unhandled errors, and table-driven tests.",
+        content: `You are a Principal Go Software Engineer.
+
+CORE RULES:
+1. IDIOMATIC ERROR HANDLING: Never ignore err. Always check if err != nil and wrap with fmt.Errorf("context: %w", err).
+2. CONTEXT PROPAGATION: Pass ctx context.Context as the first argument in all I/O or network functions.
+3. CONCURRENCY SAFETY: Guard shared memory with sync.RWMutex or use channels. Never leave goroutines uncollected.
+4. STRUCTURAL LOGGING: Use slog for JSON-structured production logging.`
+      },
+      {
+        id: "rust-axum",
+        name: "Rust & Axum Web Service",
+        category: "backend",
+        editor: "Cursor & Claude",
+        tag: "Rust / Axum",
+        desc: "Tokio async runtime, Axum extractors, custom Error enum with thiserror/anyhow, and zero unwrap() in production.",
+        content: `You are a Senior Rust Systems Architect.
+
+DIRECTIVES:
+1. ZERO UNWRAP: Never use .unwrap() or .expect() in non-test code. Use the ? operator and custom error enums.
+2. AXUM EXTRACTORS: Leverage State<AppState>, Json<T>, and Path<T> extractors cleanly.
+3. ASYNC RUNTIME: Use tokio for async primitives. Never block the executor with synchronous I/O.
+4. TYPE SAFETY: Leverage newtype patterns and Rust's ownership model to make invalid states unrepresentable.`
+      },
+      {
+        id: "react-native",
+        name: "React Native & Expo Router",
+        category: "mobile",
+        editor: "Cursor / Windsurf",
+        tag: "React Native",
+        desc: "File-based routing with Expo Router v3, NativeWind styling, safe-area compliance, and Hermes engine optimization.",
+        content: `You are an Elite React Native and Expo Mobile Engineer.
+
+GUIDELINES:
+1. EXPO ROUTER: Use file-based routing in the app/ directory with typed routes.
+2. STYLING: Use NativeWind (Tailwind) for consistent design tokens.
+3. SAFE AREA: Always wrap screen contents with SafeAreaView from react-native-safe-area-context.
+4. PERFORMANCE: Memoize heavy list items with FlashList or React.memo. Avoid inline object creation in render loops.`
+      },
+      {
+        id: "pytorch",
+        name: "PyTorch & Deep Learning Pipeline",
+        category: "ai",
+        editor: "Cursor & Claude",
+        tag: "PyTorch",
+        desc: "Reproducible tensor operations, mixed-precision training (torch.cuda.amp), modular Dataset/DataLoader, and PEFT/LoRA.",
+        content: `You are an AI Research Engineer specializing in PyTorch and Distributed Training.
+
+PROTOCOL:
+1. REPRODUCIBILITY: Always seed random, numpy, and torch RNGs.
+2. MIXED PRECISION: Use torch.autocast(device_type="cuda", dtype=torch.bfloat16) for modern accelerators.
+3. MODULAR DATA: Separate Dataset definition, DataLoader configuration, and training loop logic.
+4. DEVICE AGNOSTIC: Write code compatible with cuda, mps, and cpu via torch.device.`
+      },
+      {
+        id: "vue-nuxt",
+        name: "Vue 3 & Nuxt 3 Composition API",
+        category: "web",
+        editor: "Cursor / Windsurf",
+        tag: "Nuxt 3",
+        desc: "Script setup syntax, Pinia store architecture, useFetch with caching keys, and auto-imported composables.",
+        content: `You are a Senior Vue 3 and Nuxt 3 Full-Stack Developer.
+
+STANDARDS:
+1. SCRIPT SETUP: Use <script setup lang="ts"> exclusively with Composition API.
+2. DATA FETCHING: Use useAsyncData or useFetch with unique cache keys. Never use raw axios in components.
+3. STATE: Centralize global state in Pinia stores with setup syntax.
+4. TYPING: Strict TypeScript for all props, emits, and API responses.`
+      },
+      {
+        id: "docker-security",
+        name: "Docker & Container Hardening",
+        category: "infra",
+        editor: "Cursor & Claude",
+        tag: "Docker",
+        desc: "Multi-stage builds, non-root user execution, minimal distroless/alpine base images, and .dockerignore optimization.",
+        content: `You are a DevSecOps and Container Security Architect.
+
+CONTAINER RULES:
+1. MULTI-STAGE BUILDS: Separate build-time dependencies from the runtime image.
+2. NON-ROOT EXECUTION: Never run containers as root. Create and USER a dedicated non-privileged user.
+3. MINIMAL BASES: Use gcr.io/distroless or alpine for production images to minimize CVE attack surfaces.
+4. SECRETS: Never bake API keys or secrets into Dockerfile instructions or layer history.`
+      }
+    ];
+
+    // DOM Elements
+    const frameworkSel = document.getElementById('genFramework');
+    const editorSel = document.getElementById('genEditor');
+    const strictnessSel = document.getElementById('genStrictness');
+    const testingSel = document.getElementById('genTesting');
+    const previewEl = document.getElementById('genPreview');
+    const btnCopyGen = document.getElementById('btnCopyGen');
+    const btnDownloadGen = document.getElementById('btnDownloadGen');
+    const btnDownloadClaude = document.getElementById('btnDownloadClaude');
+    const rulesContainer = document.getElementById('rulesContainer');
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const searchInput = document.getElementById('ruleSearchInput');
+    const toast = document.getElementById('copyToast');
+
+    function showToast(msg) {
+      toast.textContent = msg || "✓ Copied to clipboard!";
+      toast.style.display = "block";
+      setTimeout(() => { toast.style.display = "none"; }, 2500);
+    }
+
+    function generateDirective() {
+      const fw = frameworkSel.value;
+      const ed = editorSel.value;
+      const st = strictnessSel.value;
+      const test = testingSel.value;
+
+      let ruleText = `You are a Principal Software Engineer and System Architect targeting ${ed.toUpperCase()}.\n\n`;
+
+      if (fw === 'nextjs15') {
+        ruleText += `STACK CONTEXT: Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS.\n\n`;
+        ruleText += `1. APP ROUTER EXCLUSIVELY: Use app/ directory. Components are Server Components by default.\n`;
+        ruleText += `2. SERVER ACTIONS: Mutate data via 'use server' actions. Never expose unprotected mutation APIs.\n`;
+        ruleText += `3. CLIENT BOUNDARIES: Isolate 'use client' to minimal interactive widgets.\n`;
+      } else if (fw === 'fastapi') {
+        ruleText += `STACK CONTEXT: FastAPI, Python 3.12, Pydantic v2, AsyncIO.\n\n`;
+        ruleText += `1. ASYNC ROUTING: Handlers must be 'async def' with non-blocking dependencies.\n`;
+        ruleText += `2. PYDANTIC V2: BaseModels must utilize strict typing and ConfigDict.\n`;
+        ruleText += `3. DEPENDENCY INJECTION: Enforce Depends() for DB sessions and auth guards.\n`;
+      } else if (fw === 'flutter') {
+        ruleText += `STACK CONTEXT: Flutter, Dart, Bloc Architecture.\n\n`;
+        ruleText += `1. BLOC PATTERN: Separate UI completely from business logic.\n`;
+        ruleText += `2. IMMUTABLE STATE: All states and events must be immutable.\n`;
+      } else {
+        ruleText += `STACK CONTEXT: ${fw.toUpperCase()} Modern Production Architecture.\n\n`;
+        ruleText += `1. STRICT TYPING: Zero 'any' types. Comprehensive interface modeling.\n`;
+        ruleText += `2. CLEAN ARCHITECTURE: Separation of concerns between Data, Domain, and Presentation.\n`;
+      }
+
+      if (st === 'production') {
+        ruleText += `4. COMPLETION DISCIPLINE: Never truncate code with '// ... existing code' or '// TODO'. Provide full drop-in implementations.\n`;
+      } else if (st === 'anti_sycophancy') {
+        ruleText += `4. ZERO SYCOPHANCY: If the user requests an anti-pattern or suboptimal architecture, politely challenge it with first-principles reasoning before proceeding.\n`;
+      } else {
+        ruleText += `4. HIGH DENSITY: Be concise. Minimal conversational filler. Let clean code speak for itself.\n`;
+      }
+
+      if (test !== 'none') {
+        ruleText += `5. TESTING: Provide comprehensive ${test.toUpperCase()} test coverage for all generated business logic.`;
+      }
+
+      previewEl.textContent = ruleText;
+    }
+
+    function downloadFile(filename, content) {
+      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast(`✓ Downloaded ${filename}`);
+    }
+
+    // Render Rules Cards
+    function renderCards(filterCat = "all", filterQuery = "") {
+      rulesContainer.innerHTML = "";
+      const q = filterQuery.toLowerCase().trim();
+
+      const filtered = RULES_DATA.filter(r => {
+        const matchesCat = (filterCat === "all" || r.category === filterCat);
+        const matchesQuery = (!q || r.name.toLowerCase().includes(q) || r.desc.toLowerCase().includes(q) || r.tag.toLowerCase().includes(q));
+        return matchesCat && matchesQuery;
+      });
+
+      if (filtered.length === 0) {
+        rulesContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--text-muted);">No directives match your search. Try another keyword or switch category.</div>`;
+        return;
+      }
+
+      filtered.forEach(r => {
+        const card = document.createElement('div');
+        card.className = "rule-card";
+        card.innerHTML = `
+          <div>
+            <div class="rule-header">
+              <span class="rule-stack-tag">${r.tag}</span>
+              <span class="rule-editor-badge">${r.editor}</span>
+            </div>
+            <h4>${r.name}</h4>
+            <p class="rule-desc">${r.desc}</p>
+          </div>
+          <div class="rule-footer-actions">
+            <button type="button" class="btn-rule-copy" data-id="${r.id}">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy
+            </button>
+            <button type="button" class="btn-rule-dl" data-id="${r.id}">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              .cursorrules
+            </button>
+          </div>
+        `;
+        rulesContainer.appendChild(card);
+      });
+
+      // Attach card button listeners
+      document.querySelectorAll('.btn-rule-copy').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.currentTarget.getAttribute('data-id');
+          const rule = RULES_DATA.find(x => x.id === id);
+          if (rule) {
+            navigator.clipboard.writeText(rule.content).then(() => showToast(`✓ Copied ${rule.name}`));
+          }
+        });
+      });
+
+      document.querySelectorAll('.btn-rule-dl').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.currentTarget.getAttribute('data-id');
+          const rule = RULES_DATA.find(x => x.id === id);
+          if (rule) {
+            downloadFile(".cursorrules", rule.content);
+          }
+        });
+      });
+    }
+
+    // Generator Event Listeners
+    [frameworkSel, editorSel, strictnessSel, testingSel].forEach(el => {
+      el.addEventListener('change', generateDirective);
+    });
+
+    btnCopyGen.addEventListener('click', () => {
+      navigator.clipboard.writeText(previewEl.textContent).then(() => showToast("✓ Copied custom directive!"));
+    });
+
+    btnDownloadGen.addEventListener('click', () => {
+      downloadFile(".cursorrules", previewEl.textContent);
+    });
+
+    btnDownloadClaude.addEventListener('click', () => {
+      downloadFile("CLAUDE.md", previewEl.textContent);
+    });
+
+    // Tab Filter Listeners
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        const cat = e.currentTarget.getAttribute('data-cat');
+        renderCards(cat, searchInput.value);
+      });
+    });
+
+    // Search input listener
+    searchInput.addEventListener('input', (e) => {
+      const activeTab = document.querySelector('.tab-btn.active');
+      const cat = activeTab ? activeTab.getAttribute('data-cat') : 'all';
+      renderCards(cat, e.target.value);
+    });
+
+    // Initial setup
+    generateDirective();
+    renderCards();
+  })();
+  </script>
+</body>
+</html>
