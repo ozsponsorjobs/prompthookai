@@ -3,6 +3,3 @@
 https://prompthookai.com/* https://www.prompthookai.com/:splat 301
 http://prompthookai.com/* https://www.prompthookai.com/:splat 301
 http://www.prompthookai.com/* https://www.prompthookai.com/:splat 301
-
-# Clean URL aliases
-/cursorrules /cursorrules.html 301
