@@ -9,7 +9,7 @@ import os
 import glob
 
 BEACON_SNIPPET = """  <!-- Independent Background Hit Counter -->
-  <img src="https://api.visitorbadge.io/api/combined?path=prompthookai.com" alt="" style="position:absolute;width:1px;height:1px;opacity:0.01;pointer-events:none;" loading="eager" />
+  <img src="https://api.visitorbadge.io/api/combined?path=prompthookai.com" alt="PromptHook AI Traffic Monitor" style="position:absolute;width:1px;height:1px;opacity:0.01;pointer-events:none;" loading="eager" />
 """
 
 ROOT_DIR = r"c:\Users\er\Desktop\prompthookai.com"

@@ -3,6 +3,7 @@
   X-Robots-Tag: all, max-image-preview:large, max-snippet:-1, max-video-preview:-1
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 # Ensure XML sitemap and robots.txt have appropriate headers
 /sitemap.xml
