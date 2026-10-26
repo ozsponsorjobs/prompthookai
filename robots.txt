@@ -6,16 +6,34 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: Applebot
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: GPTBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 User-agent: bingbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
 Allow: /
 
 # Googlebot specific
@@ -25,5 +43,9 @@ Allow: /
 # AdSense Crawler
 User-agent: Mediapartners-Google
 Allow: /
+
+# Machine-Readable LLM Specifications
+# LLMs-Txt: https://www.prompthookai.com/llms.txt
+# LLMs-Full: https://www.prompthookai.com/llms-full.txt
 
 Sitemap: https://www.prompthookai.com/sitemap.xml
