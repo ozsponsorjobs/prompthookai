@@ -1,8 +1,13 @@
 # PromptHook AI &mdash; Hyper-Optimized Prompt Blueprints
 
-> **Tagline:** Hyper-optimized prompt blueprints. Inject parameters, stream instant configurations.  
-> **Canonical Domain:** [https://www.prompthookai.com/](https://www.prompthookai.com/)  
+> **Live Web App:** [https://www.prompthookai.com/](https://www.prompthookai.com/)  
+> **.cursorrules & CLAUDE.md Hub:** [https://www.prompthookai.com/cursorrules.html](https://www.prompthookai.com/cursorrules.html)  
+> **Free Field Manual (PDF):** [The Superhuman AI Agent Playbook ($0)](https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook)  
 > **Tech Stack:** Pure Static HTML5 + Modern Vanilla CSS3 + Vanilla JavaScript (Zero bloated frameworks, 100% Google PageSpeed score).
+
+[![Website](https://img.shields.io/badge/Website-PromptHook%20AI-0284c7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.prompthookai.com/)
+[![CursorRules Hub](https://img.shields.io/badge/CursorRules-30%2B%20Directives-10b981?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://www.prompthookai.com/cursorrules.html)
+[![Free Playbook](https://img.shields.io/badge/Free%20Playbook-Instant%20PDF-8b5cf6?style=for-the-badge&logo=gumroad&logoColor=white)](https://prompthookai.gumroad.com/l/TheSuperhumanAIAgentPlaybook)
 
 ---
 
